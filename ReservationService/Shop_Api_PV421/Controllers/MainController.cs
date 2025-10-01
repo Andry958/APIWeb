@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using BusinessLogic.DTOs.ResourceDTO;
+using BusinessLogic.Interfaces;
 using DataAccess.Data;
 using DataAccess.Data.Entities;
 using Microsoft.AspNetCore.Http;
@@ -11,78 +12,78 @@ namespace Shop_Api_PV421.Controllers
     [ApiController]
     public class MainController : ControllerBase
     {
-        private readonly ReservationServiceDbContext ctx;
-        private readonly IMapper mapper;
-        public MainController(ReservationServiceDbContext ctx, IMapper mapper)
+        private readonly IResourcesService resourcesService;
+
+        public MainController(IResourcesService resourcesService)
         {
-            this.ctx = ctx;
-            this.mapper = mapper;
+            this.resourcesService = resourcesService;
         }
 
         [HttpGet("all")]
         public IActionResult GetAll()
         {
-            var items = ctx.Resources.ToList();
-
-            return Ok(mapper.Map<IEnumerable<ResourceGetDTO>>(items));
+            var items = resourcesService.GetAll();
+            return Ok(items);
         }
-        
+
         [HttpGet]
-        public IActionResult Get([FromQuery]Guid id)
+        public IActionResult Get([FromQuery] Guid id)
         {
             if (id == Guid.Empty)
-                return BadRequest("Id can not be empty!");
+                return BadRequest();
 
-            var item = ctx.Resources.Find(id);
+            var item = resourcesService.Get(id);
 
             if (item == null)
-                return NotFound("Resource not found!");
+                return NotFound();
 
-            return Ok(mapper.Map<IEnumerable<ResourceGetDTO>>(item));
-
+            return Ok(item);
         }
+
         [HttpPost]
         public IActionResult Create([FromBody] ResourceCreateDTO resource)
         {
             if (resource == null)
-                return BadRequest("Resource is null!");
+                return BadRequest();
 
-            var entity = mapper.Map<Resource>(resource); 
-            ctx.Resources.Add(entity);                    
-            ctx.SaveChanges();
-
-            return Ok(mapper.Map<ResourceGetDTO>(entity));                           
+            var created = resourcesService.Create(resource);
+            return Ok(created);
         }
+
         [HttpPut]
         public IActionResult Edit([FromBody] ResourceEditDTO resource)
         {
             if (resource == null)
-                return BadRequest("Resource is null!");
+                return BadRequest();
 
-            var existingResource = ctx.Resources.Find(resource.Id);
+            if (resource.Id == Guid.Empty)
+                return BadRequest();
+
+            var existingResource = resourcesService.Get(resource.Id);
             if (existingResource == null)
-                return NotFound("Resource not found!");
+                return NotFound();
 
-            var entity = mapper.Map(resource, existingResource);
-
-            ctx.Resources.Add(entity);
-            ctx.SaveChanges();
-
-            return Ok(existingResource);
+            resourcesService.Edit(resource);
+            return Ok();
         }
+
         [HttpDelete]
         public IActionResult Delete([FromQuery] Guid id)
         {
             if (id == Guid.Empty)
-                return BadRequest("Id can not be empty!");
+                return BadRequest();
 
-            var resource = ctx.Resources.Find(id);
+            var resource = resourcesService.Get(id);
             if (resource == null)
-                return NotFound("Resource not found!");
+                return NotFound();
 
-            ctx.Resources.Remove(resource);
-            ctx.SaveChanges();
-
+            resourcesService.Delete(id);
+            return Ok();
+        }
+        [HttpDelete("all")]
+        public IActionResult DeleteAll()
+        {
+            resourcesService.DeleteAll();
             return Ok();
         }
     }

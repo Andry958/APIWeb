@@ -18,8 +18,8 @@ namespace BusinessLogic.Configurations
             //CreateMap<EditProductDto, Product>();
             //CreateMap<ProductDto, Product>().ReverseMap();
             CreateMap<Resource, ResourceGetDTO>().ReverseMap();
-            CreateMap<Resource, ResourceCreateDTO>();
-            CreateMap<Resource, ResourceEditDTO>();
+            CreateMap<ResourceCreateDTO, Resource>();  
+            CreateMap<ResourceEditDTO, Resource>();
 
             CreateMap<Category, CategoryDTO>().ReverseMap();
             CreateMap<Category, CategoryCreateDTO>().ReverseMap();

@@ -2,6 +2,7 @@
 using BusinessLogic.DTOs.CategoryDTO;
 using DataAccess.Data;
 using DataAccess.Data.Entities;
+using DataAccess.Enum;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -81,6 +82,36 @@ namespace ReservationService.Controllers
             ctx.SaveChanges();
 
             return Ok("Category deleted");
+        }
+        [HttpDelete("all")]
+        public IActionResult DeleteAll()
+        {
+            ctx.Categories.RemoveRange(ctx.Categories);
+            ctx.SaveChanges();
+
+            return Ok();
+        }
+        [HttpPost("seed")]
+        public IActionResult SeedCategories()
+        {
+            var categories = new List<Category>
+            {
+                new Category { Name = "Готелі та апартаменти", Slug = CategorySlug.Hotels },
+                new Category { Name = "Ресторани та кафе", Slug = CategorySlug.Restaurants },
+                new Category { Name = "Спортивні майданчики", Slug = CategorySlug.Sports },
+                new Category { Name = "Салони краси", Slug = CategorySlug.Beauty },
+                new Category { Name = "Медичні послуги", Slug = CategorySlug.Medical },
+                new Category { Name = "Конференц-зали", Slug = CategorySlug.Conference },
+                new Category { Name = "Коворкінги", Slug = CategorySlug.Coworking },
+                new Category { Name = "Оренда авто", Slug = CategorySlug.CarRental },
+                new Category { Name = "Майстерні та СТО", Slug = CategorySlug.AutoService },
+                new Category { Name = "Розваги", Slug = CategorySlug.Entertainment }
+            };
+
+            ctx.Categories.AddRange(categories);
+            ctx.SaveChanges();
+
+            return Ok("Categories seeded successfully!");
         }
     }
 }

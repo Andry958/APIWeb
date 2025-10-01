@@ -1,4 +1,5 @@
 ﻿using DataAccess.Data.Entities;
+using DataAccess.Enum;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,5 +12,6 @@ namespace BusinessLogic.DTOs.CategoryDTO
     {
         public Guid Id { get; set; }
         public string Name { get; set; }
+        public CategorySlug Slug { get; set; }
     }
 }

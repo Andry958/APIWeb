@@ -3,6 +3,8 @@ using DataAccess.Data;
 using FluentValidation.AspNetCore;
 using FluentValidation;
 using Microsoft.EntityFrameworkCore;
+using BusinessLogic.Interfaces;
+using BusinessLogic.Services;
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -17,6 +19,8 @@ builder.Services.AddAutoMapper(cfg => { }, typeof(MapperProfile));
 
 builder.Services.AddDbContext<ReservationServiceDbContext>(options =>
     options.UseSqlServer(connStr));
+
+builder.Services.AddScoped<IResourcesService, ResourcesService>();
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
