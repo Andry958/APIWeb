@@ -10,6 +10,7 @@ namespace BusinessLogic.Interfaces
 {
     public interface IResourcesService
     {
+        void SeedResources();
         IList<ResourceGetDTO> GetAll(Guid? filterCategoryId, string? ByName, string? ByDescription, decimal? filterMin, decimal? filterMax,bool? SortPriceAsc);
         ResourceGetDTO? Get(Guid id);
         ResourceGetDTO Create(ResourceCreateDTO model);
