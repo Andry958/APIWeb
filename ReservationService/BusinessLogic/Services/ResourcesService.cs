@@ -81,7 +81,7 @@ namespace BusinessLogic.Services
                 query = query.Where(x => x.Name.ToLower().Contains(ByName.ToLower()));
 
             if (ByDescription != null)
-                query = query.Where(x => x.Name.ToLower().Contains(ByDescription.ToLower()));
+                query = query.Where(x => x.Description.ToLower().Contains(ByDescription.ToLower()));
 
             if (filterMin != null && filterMax != null)
                 query = query.Where(x => x.PricePerHour >= filterMin && x.PricePerHour <= filterMax);
