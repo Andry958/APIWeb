@@ -1,4 +1,5 @@
 ﻿using BusinessLogic.DTOs.ResourceDTO;
+using DataAccess.Enum;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,7 +10,7 @@ namespace BusinessLogic.Interfaces
 {
     public interface IResourcesService
     {
-        IList<ResourceGetDTO> GetAll();
+        IList<ResourceGetDTO> GetAll(Guid? filterCategoryId, string? ByName, string? ByDescription, decimal? filterMin, decimal? filterMax,bool? SortPriceAsc);
         ResourceGetDTO? Get(Guid id);
         ResourceGetDTO Create(ResourceCreateDTO model);
         void Edit(ResourceEditDTO model);

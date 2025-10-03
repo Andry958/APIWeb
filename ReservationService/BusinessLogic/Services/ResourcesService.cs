@@ -8,6 +8,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
+using DataAccess.Enum;
 
 namespace BusinessLogic.Services
 {
@@ -68,11 +70,32 @@ namespace BusinessLogic.Services
             return mapper.Map<ResourceGetDTO>(item);
         }
 
-        public IList<ResourceGetDTO> GetAll()
+        public IList<ResourceGetDTO> GetAll(Guid? filterCategoryId, string? ByName, string? ByDescription, decimal? filterMin, decimal? filterMax, bool? SortPriceAsc)
         {
-            var items = ctx.Resources
-                // .Include(x => x.Reservations) // якщо є зв'язки
-                .ToList();
+            IQueryable<Resource> query = ctx.Resources.Include(x => x.Category);
+
+            if (filterCategoryId != null)
+                query = query.Where(x => x.CategoryId == filterCategoryId);
+
+            if (ByName != null)
+                query = query.Where(x => x.Name.ToLower().Contains(ByName.ToLower()));
+
+            if (ByDescription != null)
+                query = query.Where(x => x.Name.ToLower().Contains(ByDescription.ToLower()));
+
+            if (filterMin != null && filterMax != null)
+                query = query.Where(x => x.PricePerHour >= filterMin && x.PricePerHour <= filterMax);
+
+            if (SortPriceAsc != null)
+                if (SortPriceAsc == true)
+                    query = query.OrderBy(x => x.PricePerHour);
+                if(SortPriceAsc == false)
+                    query = query.OrderByDescending(x => x.PricePerHour);
+
+
+
+
+            var items = query.ToList();
 
             return mapper.Map<IList<ResourceGetDTO>>(items);
         }

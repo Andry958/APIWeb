@@ -19,4 +19,5 @@ namespace DataAccess.Enum
         AutoService,
         Entertainment
     }
+
 }
