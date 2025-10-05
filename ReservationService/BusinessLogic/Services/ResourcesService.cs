@@ -1,5 +1,4 @@
 ﻿using AutoMapper;
-using BusinessLogic.DTOs.ResourceDTO;
 using BusinessLogic.Interfaces;
 using DataAccess.Data.Entities;
 using DataAccess.Data;
@@ -10,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using DataAccess.Enum;
+using BusinessLogic.DTOs.ResourceDTO;
 
 namespace BusinessLogic.Services
 {
@@ -91,9 +91,6 @@ namespace BusinessLogic.Services
                     query = query.OrderBy(x => x.PricePerHour);
                 if(SortPriceAsc == false)
                     query = query.OrderByDescending(x => x.PricePerHour);
-
-
-
 
             var items = query.ToList();
 

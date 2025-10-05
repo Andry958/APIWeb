@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using BusinessLogic.DTOs.CategoryDTO;
+using BusinessLogic.Interfaces;
 using DataAccess.Data;
 using DataAccess.Data.Entities;
 using DataAccess.Enum;
@@ -12,104 +13,58 @@ namespace ReservationService.Controllers
     [ApiController]
     public class CategoryController : ControllerBase
     {
-        private readonly ReservationServiceDbContext ctx;
-        private readonly IMapper mapper;
-        public CategoryController(ReservationServiceDbContext ctx, IMapper mapper)
+        private readonly ICategoryService categoryService;
+
+        public CategoryController(ICategoryService categoryService)
         {
-            this.ctx = ctx;
-            this.mapper = mapper;
+            this.categoryService = categoryService;
         }
 
         [HttpGet("all")]
-        public IActionResult GetAll()
+        public IActionResult GetAll(string? ByName, CategorySlug categorySlug)
         {
-            var items = ctx.Categories.ToList();
+            var items = categoryService.GetAll(ByName, categorySlug);
 
-            return Ok(mapper.Map<IEnumerable<CategoryDTO>>(items));
+            return Ok(items);
         }
         [HttpGet]
         public IActionResult Get([FromQuery] Guid id)
         {
-            if (id == Guid.Empty)
-                return BadRequest("Id can not be empty!");
+            var item = categoryService.Get(id);
 
-            var item = ctx.Categories.Find(id);
-
-            if (item == null)
-                return NotFound("Category not found!");
-
-            return Ok(mapper.Map<CategoryDTO>(item));
+            return Ok(item);
         }
         [HttpPost]
         public IActionResult Create([FromBody] CategoryCreateDTO category)
         {
-            if (category == null)
-                return BadRequest("Category is null!");
-            var entity = mapper.Map<Category>(category);
-            ctx.Categories.Add(entity);
-            ctx.SaveChanges();
+           var item = categoryService.Create(category);
 
-            return Ok(mapper.Map<CategoryDTO>(entity));
+            return Ok(item);
         }
         [HttpPut]
         public IActionResult Edit([FromBody] CategoryDTO category)
         {
-            if (category == null)
-                return BadRequest("Category is null!");
-
-            var entity = ctx.Categories.Find(category.Id);
-            if (entity == null)
-                return NotFound("Category not found!");
-
-            entity.Name = category.Name;
-
-            ctx.Categories.Update(entity);
-            ctx.SaveChanges();
-
-            return Ok(mapper.Map<CategoryDTO>(entity));
+            var item = categoryService.Edit(category);
+            return Ok(item);
         }
         [HttpDelete]
         public IActionResult Delete([FromQuery] Guid id)
         {
-            if (id == Guid.Empty)
-                return BadRequest("Id can not be empty!");
-
-            var entity = ctx.Categories.Find(id);
-            if (entity == null)
-                return NotFound("Category not found!");
-
-            ctx.Categories.Remove(entity);
-            ctx.SaveChanges();
+            categoryService.Delete(id);
 
             return Ok("Category deleted");
         }
         [HttpDelete("all")]
         public IActionResult DeleteAll()
         {
-            ctx.Categories.RemoveRange(ctx.Categories);
-            ctx.SaveChanges();
+            categoryService.DeleteAll();
 
             return Ok();
         }
         [HttpPost("seed")]
         public IActionResult SeedCategories()
         {
-            var categories = new List<Category>
-            {
-                new Category { Name = "Готелі та апартаменти", Slug = CategorySlug.Hotels },
-                new Category { Name = "Ресторани та кафе", Slug = CategorySlug.Restaurants },
-                new Category { Name = "Спортивні майданчики", Slug = CategorySlug.Sports },
-                new Category { Name = "Салони краси", Slug = CategorySlug.Beauty },
-                new Category { Name = "Медичні послуги", Slug = CategorySlug.Medical },
-                new Category { Name = "Конференц-зали", Slug = CategorySlug.Conference },
-                new Category { Name = "Коворкінги", Slug = CategorySlug.Coworking },
-                new Category { Name = "Оренда авто", Slug = CategorySlug.CarRental },
-                new Category { Name = "Майстерні та СТО", Slug = CategorySlug.AutoService },
-                new Category { Name = "Розваги", Slug = CategorySlug.Entertainment }
-            };
-
-            ctx.Categories.AddRange(categories);
-            ctx.SaveChanges();
+           categoryService.SeedCategories();
 
             return Ok("Categories seeded successfully!");
         }

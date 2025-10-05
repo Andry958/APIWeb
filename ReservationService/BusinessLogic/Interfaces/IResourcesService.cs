@@ -1,4 +1,5 @@
-﻿using BusinessLogic.DTOs.ResourceDTO;
+﻿using BusinessLogic.DTOs.CategoryDTO;
+using BusinessLogic.DTOs.ResourceDTO;
 using DataAccess.Enum;
 using System;
 using System.Collections.Generic;
@@ -18,4 +19,5 @@ namespace BusinessLogic.Interfaces
         void Delete(Guid id);
         void DeleteAll();
     }
+    
 }
