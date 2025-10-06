@@ -21,50 +21,50 @@ namespace ReservationService.Controllers
         }
 
         [HttpGet("all")]
-        public IActionResult GetAll(string? ByName, CategorySlug categorySlug)
+        public async Task<IActionResult> GetAll(string? ByName, CategorySlug categorySlug,int pageNumber)
         {
-            var items = categoryService.GetAll(ByName, categorySlug);
+            var items = await categoryService.GetAll(ByName, categorySlug, pageNumber);
 
             return Ok(items);
         }
         [HttpGet]
-        public IActionResult Get([FromQuery] Guid id)
+        public async Task<IActionResult> Get([FromQuery] Guid id)
         {
-            var item = categoryService.Get(id);
+            var item = await categoryService.Get(id);
 
             return Ok(item);
         }
         [HttpPost]
-        public IActionResult Create([FromBody] CategoryCreateDTO category)
+        public async Task<IActionResult> Create([FromBody] CategoryCreateDTO category)
         {
-           var item = categoryService.Create(category);
+            var item =  await categoryService.Create(category);
 
             return Ok(item);
         }
         [HttpPut]
-        public IActionResult Edit([FromBody] CategoryDTO category)
+        public async Task<IActionResult> Edit([FromBody] CategoryDTO category)
         {
-            var item = categoryService.Edit(category);
+            var item = await categoryService.Edit(category);
             return Ok(item);
         }
         [HttpDelete]
-        public IActionResult Delete([FromQuery] Guid id)
+        public async Task<IActionResult> Delete([FromQuery] Guid id)
         {
-            categoryService.Delete(id);
+            await categoryService.Delete(id);
 
             return Ok("Category deleted");
         }
         [HttpDelete("all")]
-        public IActionResult DeleteAll()
+        public async Task<IActionResult> DeleteAll()
         {
-            categoryService.DeleteAll();
+            await categoryService.DeleteAll();
 
             return Ok();
         }
         [HttpPost("seed")]
-        public IActionResult SeedCategories()
+        public async Task<IActionResult> SeedCategories()
         {
-           categoryService.SeedCategories();
+            await categoryService.SeedCategories();
 
             return Ok("Categories seeded successfully!");
         }

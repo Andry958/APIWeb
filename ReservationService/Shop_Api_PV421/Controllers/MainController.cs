@@ -26,19 +26,19 @@ namespace Shop_Api_PV421.Controllers
         }
 
         [HttpGet("all")]
-        public IActionResult GetAll(Guid? filterCategoryId, string? ByName, string? ByDescription, decimal? filterMin, decimal? filterMax, bool? SortPriceAsc)
+        public async Task<IActionResult> GetAll(Guid? filterCategoryId, string? ByName, string? ByDescription, decimal? filterMin, decimal? filterMax, bool? SortPriceAsc, int pageNumber)
         {
-            var items = resourcesService.GetAll(filterCategoryId, ByName, ByDescription, filterMin, filterMax, SortPriceAsc);
+            var items = await resourcesService.GetAll(filterCategoryId, ByName, ByDescription, filterMin, filterMax, SortPriceAsc, pageNumber);
             return Ok(items);
         }
 
         [HttpGet]
-        public IActionResult Get([FromQuery] Guid id)
+        public async Task<IActionResult> Get([FromQuery] Guid id)
         {
             if (id == Guid.Empty)
                 return BadRequest();
 
-            var item = resourcesService.Get(id);
+            var item = await resourcesService.Get(id);
 
             if (item == null)
                 return NotFound();
@@ -47,17 +47,17 @@ namespace Shop_Api_PV421.Controllers
         }
 
         [HttpPost]
-        public IActionResult Create([FromBody] ResourceCreateDTO resource)
+        public async Task<IActionResult> Create([FromBody] ResourceCreateDTO resource)
         {
             if (resource == null)
                 return BadRequest();
 
-            var created = resourcesService.Create(resource);
+            var created = await resourcesService.Create(resource);
             return Ok(created);
         }
 
         [HttpPut]
-        public IActionResult Edit([FromBody] ResourceEditDTO resource)
+        public async Task<IActionResult> Edit([FromBody] ResourceEditDTO resource)
         {
             if (resource == null)
                 return BadRequest();
@@ -65,38 +65,37 @@ namespace Shop_Api_PV421.Controllers
             if (resource.Id == Guid.Empty)
                 return BadRequest();
 
-            var existingResource = resourcesService.Get(resource.Id);
+            var existingResource = await resourcesService.Get(resource.Id);
             if (existingResource == null)
                 return NotFound();
 
-            resourcesService.Edit(resource);
+            await resourcesService.Edit(resource);
             return Ok();
         }
 
         [HttpDelete]
-        public IActionResult Delete([FromQuery] Guid id)
+        public async Task<IActionResult> Delete([FromQuery] Guid id)
         {
             if (id == Guid.Empty)
                 return BadRequest();
 
-            var resource = resourcesService.Get(id);
+            var resource = await resourcesService.Get(id);
             if (resource == null)
                 return NotFound();
 
-            resourcesService.Delete(id);
+            await resourcesService.Delete(id);
             return Ok();
         }
         [HttpDelete("all")]
-        public IActionResult DeleteAll()
+        public async Task<IActionResult> DeleteAll()
         {
-            resourcesService.DeleteAll();
+            await resourcesService.DeleteAll();
             return Ok();
         }
         [HttpPost("seed-resources")]
-        public IActionResult SeedResources()
+        public async Task<IActionResult> SeedResources()
         {
-            
-            resourcesService.SeedResources();
+            await resourcesService.SeedResources();
             return Ok("Resources seeded successfully!");
         }
 

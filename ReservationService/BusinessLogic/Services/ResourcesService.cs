@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using DataAccess.Enum;
 using BusinessLogic.DTOs.ResourceDTO;
+using BusinessLogic.Helpers;
 
 namespace BusinessLogic.Services
 {
@@ -24,15 +25,15 @@ namespace BusinessLogic.Services
             this.mapper = mapper;
         }
 
-        public ResourceGetDTO Create(ResourceCreateDTO model)
+        public async Task<ResourceGetDTO> Create(ResourceCreateDTO model)
         {
             var entity = mapper.Map<Resource>(model);
-            ctx.Resources.Add(entity);
-            ctx.SaveChanges(); 
+            await ctx.Resources.AddAsync(entity);
+            await ctx.SaveChangesAsync(); 
             return mapper.Map<ResourceGetDTO>(entity);
         }
 
-        public void Delete(Guid id)
+        public async Task Delete(Guid id)
         {
             if (id == Guid.Empty) return;
 
@@ -40,38 +41,42 @@ namespace BusinessLogic.Services
             if (item == null) return;
 
             ctx.Resources.Remove(item);
-            ctx.SaveChanges();
+            await ctx.SaveChangesAsync();
+
         }
 
-        public void DeleteAll()
+        public async Task DeleteAll()
         {
             ctx.Resources.RemoveRange(ctx.Resources);
-            ctx.SaveChanges();
+            await ctx.SaveChangesAsync();
         }
 
-        public void Edit(ResourceEditDTO model)
+        public async Task Edit(ResourceEditDTO model)
         {
-            var existingResource = ctx.Resources.Find(model.Id);
+            var existingResource = await ctx.Resources.FindAsync(model.Id);
             if (existingResource == null) return; 
 
             mapper.Map(model, existingResource);
-            ctx.SaveChanges();
+            await ctx.SaveChangesAsync();
         }
 
-        public ResourceGetDTO? Get(Guid id)
+        public async Task<ResourceGetDTO?> Get(Guid id)
         {
             if (id == Guid.Empty)
                 return null;
 
-            var item = ctx.Resources.Find(id);
+            var item = await ctx.Resources.FindAsync(id);
             if (item == null)
                 return null;
 
             return mapper.Map<ResourceGetDTO>(item);
         }
 
-        public IList<ResourceGetDTO> GetAll(Guid? filterCategoryId, string? ByName, string? ByDescription, decimal? filterMin, decimal? filterMax, bool? SortPriceAsc)
+        public async Task<IList<ResourceGetDTO>> GetAll(Guid? filterCategoryId, string? ByName, string? ByDescription, decimal? filterMin, decimal? filterMax, bool? SortPriceAsc, int pageNumber = 1)
         {
+            if (pageNumber < 1)
+                pageNumber = 1;
+
             IQueryable<Resource> query = ctx.Resources.Include(x => x.Category);
 
             if (filterCategoryId != null)
@@ -92,12 +97,12 @@ namespace BusinessLogic.Services
                 if(SortPriceAsc == false)
                     query = query.OrderByDescending(x => x.PricePerHour);
 
-            var items = query.ToList();
+            var items = await PagedList<Resource>.CreateAsync(query, pageNumber, 5);
 
             return mapper.Map<IList<ResourceGetDTO>>(items);
         }
 
-        public void SeedResources()
+        public async Task SeedResources()
         {
             var resources = new List<Resource>
     {
@@ -285,8 +290,8 @@ namespace BusinessLogic.Services
         }
     };
 
-            ctx.Resources.AddRange(resources);
-            ctx.SaveChanges();
+            await ctx.Resources.AddRangeAsync(resources);
+            await ctx.SaveChangesAsync();
         }
     }
 }

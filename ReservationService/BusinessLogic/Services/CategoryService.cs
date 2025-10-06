@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using BusinessLogic.DTOs.CategoryDTO;
+using BusinessLogic.Helpers;
 using BusinessLogic.Interfaces;
 using DataAccess.Data;
 using DataAccess.Data.Entities;
@@ -21,18 +22,18 @@ namespace BusinessLogic.Services
             this.ctx = ctx;
             this.mapper = mapper;
         }
-        public CategoryDTO Create(CategoryCreateDTO category)
+        public async Task<CategoryDTO> Create(CategoryCreateDTO category)
         {
             if (category == null)
                 return null;
             var entity = mapper.Map<Category>(category);
-            ctx.Categories.Add(entity);
-            ctx.SaveChanges();
+            await ctx.Categories.AddAsync(entity);
+            await ctx.SaveChangesAsync();
 
             return mapper.Map<CategoryDTO>(entity);
         }
 
-        public void Delete(Guid id)
+        public async Task Delete(Guid id)
         {
             if (id == Guid.Empty)
                 return;
@@ -42,21 +43,21 @@ namespace BusinessLogic.Services
                 return;
 
             ctx.Categories.Remove(entity);
-            ctx.SaveChanges();
+            await ctx.SaveChangesAsync();
         }
 
-        public void DeleteAll()
+        public async Task DeleteAll()
         {
             ctx.Categories.RemoveRange(ctx.Categories);
-            ctx.SaveChanges();
+            await ctx.SaveChangesAsync();
         }
 
-        public CategoryDTO Edit(CategoryDTO category)
+        public async Task<CategoryDTO> Edit(CategoryDTO category)
         {
             if (category == null)
                 return null;
 
-            var entity = ctx.Categories.Find(category.Id);
+            var entity = await ctx.Categories.FindAsync(category.Id);
             if (entity == null)
                 return null;
 
@@ -64,16 +65,16 @@ namespace BusinessLogic.Services
             entity.Slug = category.Slug;
 
             ctx.Categories.Update(entity);
-            ctx.SaveChanges();
+            await ctx.SaveChangesAsync();
 
             return mapper.Map<CategoryDTO>(entity);
         }
-        public CategoryDTO? Get(Guid id)
+        public async Task<CategoryDTO?> Get(Guid id)
         {
             if (id == Guid.Empty)
                 return null;
 
-            var item = ctx.Categories.Find(id);
+            var item = await ctx.Categories.FindAsync(id);
 
             if (item == null)
                 return null;
@@ -81,22 +82,24 @@ namespace BusinessLogic.Services
             return mapper.Map<CategoryDTO>(item);
         }
 
-        public IList<CategoryDTO> GetAll(string? ByName, CategorySlug categorySlug)
+        public async Task<IList<CategoryDTO>> GetAll(string? ByName, CategorySlug categorySlug, int pageNumber = 1)
         {
+            if (pageNumber < 1)
+                pageNumber = 1;
+
             IQueryable<Category> query = ctx.Categories;
 
             if (!string.IsNullOrEmpty(ByName))
                 query = query.Where(c => c.Name.ToLower().Contains(ByName.ToLower()));
+
             if (categorySlug != 0)
                 query = query.Where(c => c.Slug == categorySlug);
 
-
-            var items = query.ToList();
-
+            var items = await PagedList<Category>.CreateAsync(query, pageNumber, 5);
             return mapper.Map<IList<CategoryDTO>>(items);      
         }
 
-        public void SeedCategories()
+        public async Task SeedCategories()
         {
             var categories = new List<Category>
             {
@@ -112,8 +115,8 @@ namespace BusinessLogic.Services
                 new Category { Name = "Розваги", Slug = CategorySlug.Entertainment }
             };
 
-            ctx.Categories.AddRange(categories);
-            ctx.SaveChanges();
+            await ctx.Categories.AddRangeAsync(categories);
+            await ctx.SaveChangesAsync();
         }
     }
 }
