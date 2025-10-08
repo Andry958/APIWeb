@@ -92,10 +92,11 @@ namespace BusinessLogic.Services
                 query = query.Where(x => x.PricePerHour >= filterMin && x.PricePerHour <= filterMax);
 
             if (SortPriceAsc != null)
-                if (SortPriceAsc == true)
-                    query = query.OrderBy(x => x.PricePerHour);
-                if(SortPriceAsc == false)
+                query = SortPriceAsc.Value ?
+                    query.OrderBy(x => x.PricePerHour)
+                        :
                     query = query.OrderByDescending(x => x.PricePerHour);
+
 
             var items = await PagedList<Resource>.CreateAsync(query, pageNumber, 5);
 

@@ -2,8 +2,10 @@ using BusinessLogic.Configurations;
 using BusinessLogic.Interfaces;
 using BusinessLogic.Services;
 using DataAccess.Data;
+using DataAccess.Data.Entities;
 using FluentValidation;
 using FluentValidation.AspNetCore;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using ReservationService;
 
@@ -16,6 +18,14 @@ string connStr = builder.Configuration.GetConnectionString("DefaultConnection")
 // Add services to the container.
 builder.Services.AddControllers();
 
+
+builder.Services.AddIdentity<User, IdentityRole>(options =>
+    options.SignIn.RequireConfirmedAccount = false)
+    .AddDefaultTokenProviders()
+    //.AddRoles<IdentityRole>()
+    .AddEntityFrameworkStores<ReservationServiceDbContext>();
+
+
 builder.Services.AddAutoMapper(cfg => { }, typeof(MapperProfile));
 
 builder.Services.AddDbContext<ReservationServiceDbContext>(options =>
@@ -23,6 +33,7 @@ builder.Services.AddDbContext<ReservationServiceDbContext>(options =>
 
 builder.Services.AddScoped<IResourcesService, ResourcesService>();
 builder.Services.AddScoped<ICategoryService, CategoryService>();
+builder.Services.AddScoped<IUserServices, UserServices>();
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();

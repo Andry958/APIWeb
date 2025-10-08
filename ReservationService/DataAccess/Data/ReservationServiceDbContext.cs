@@ -16,6 +16,8 @@ namespace DataAccess.Data
         public DbSet<Resource> Resources { get; set; }
         public DbSet<Category> Categories { get; set; }
 
+        public DbSet<Reservation> Reservations { get; set; }
+
         //protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         //{
         //    base.OnConfiguring(optionsBuilder);

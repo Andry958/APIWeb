@@ -17,8 +17,6 @@ namespace Shop_Api_PV421.Controllers
         private readonly IResourcesService resourcesService;
         private readonly ReservationServiceDbContext ctx;
 
-
-
         public MainController(IResourcesService resourcesService, ReservationServiceDbContext ctx)
         {
             this.resourcesService = resourcesService;
