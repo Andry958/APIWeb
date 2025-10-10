@@ -64,6 +64,16 @@ namespace BusinessLogic.Services
             var users = await ctx.Users.ToListAsync();
             return mapper.Map<List<UserGetModel>>(users);
         }
+        public Task<LoginResponse> ForgetPssword(string Email)
+        {
+
+
+            return null;
+        }
+        public Task Resetpassword(string Token, string Password)
+        {
+            return Task.CompletedTask;
+        }
 
     }
 }

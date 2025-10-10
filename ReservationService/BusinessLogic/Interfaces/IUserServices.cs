@@ -13,5 +13,8 @@ namespace BusinessLogic.Interfaces
         public Task<LoginResponse> Login(UserLoginModel model);
         public Task Logout();
         public Task<List<UserGetModel>> GetAll();
+        public Task<LoginResponse> ForgetPssword(string Email);
+        public Task Resetpassword(string Token, string Password);
+
     }
 }
