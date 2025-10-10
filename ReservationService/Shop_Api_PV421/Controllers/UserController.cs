@@ -25,5 +25,19 @@ namespace ReservationService.Controllers
             var users = await userServices.GetAll();
             return Ok(users);
         }
+        [HttpPost("login")]
+        public async Task<IActionResult> Login([FromBody] UserLoginModel userLoginModel)
+        {
+            var res = await userServices.Login(userLoginModel);
+            return Ok(res);
+        }
+        [HttpPost("logout")]
+        public async Task<IActionResult> Logout()
+        {
+            await userServices.Logout();
+            return Ok("Ви успішно вийшли з акаунта");
+        }
+
+
     }
 }

@@ -10,8 +10,8 @@ namespace BusinessLogic.Interfaces
     public interface IUserServices
     {
         public Task Register(UserRegisterModel model);
-        public Task Login(UserLoginModel model);
-        public Task Logout(LogoutModel model);
+        public Task<LoginResponse> Login(UserLoginModel model);
+        public Task Logout();
         public Task<List<UserGetModel>> GetAll();
     }
 }

@@ -16,24 +16,38 @@ namespace BusinessLogic.Services
 {
     public class UserServices : IUserServices
     {
-        private readonly UserManager<User> userManager;
         private readonly IMapper mapper;
+        private readonly IJwtService jwtService;
+
+        private readonly UserManager<User> userManager;
         private readonly ReservationServiceDbContext ctx;
-        public UserServices(UserManager<User> userManager, IMapper mapper, ReservationServiceDbContext ctx)
+        private readonly SignInManager<User> signInManager;
+        public UserServices(UserManager<User> userManager, IMapper mapper, ReservationServiceDbContext ctx, SignInManager<User> signInManager, IJwtService jwtService)
         {
             this.userManager = userManager;
             this.mapper = mapper;
             this.ctx = ctx;
+            this.signInManager = signInManager;
+            this.jwtService = jwtService;
         }
 
-        public Task Login(UserLoginModel model)
+        public async Task<LoginResponse> Login(UserLoginModel model)
         {
-            throw new NotImplementedException();
+            var user = await userManager.FindByNameAsync(model.Login);
+
+            if (user == null || !await userManager.CheckPasswordAsync(user, model.Password))
+                throw new HttpException("Wrong login or password!", HttpStatusCode.BadRequest);
+
+            //await signInManager.PasswordSignInAsync(user, model.Password, false, false);
+            return new()
+            {
+                AccessToken = jwtService.GenerateToken(jwtService.GetClaims(user))
+            };
         }
 
-        public Task Logout(LogoutModel model)
+        public async Task Logout()
         {
-            throw new NotImplementedException();
+            await signInManager.SignOutAsync();
         }
 
         public async Task Register(UserRegisterModel model)

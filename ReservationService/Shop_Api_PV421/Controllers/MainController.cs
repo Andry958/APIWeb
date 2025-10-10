@@ -4,6 +4,8 @@ using BusinessLogic.Interfaces;
 using DataAccess.Data;
 using DataAccess.Data.Entities;
 using DataAccess.Enum;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System.Xml.Linq;
@@ -12,6 +14,8 @@ namespace Shop_Api_PV421.Controllers
 {
     [Route("api/main")]
     [ApiController]
+    [Authorize]
+
     public class MainController : ControllerBase
     {
         private readonly IResourcesService resourcesService;
@@ -24,7 +28,7 @@ namespace Shop_Api_PV421.Controllers
         }
 
         [HttpGet("all")]
-        public async Task<IActionResult> GetAll(Guid? filterCategoryId, string? ByName, string? ByDescription, decimal? filterMin, decimal? filterMax, bool? SortPriceAsc, int pageNumber)
+        public async Task<IActionResult> GetAll(Guid? filterCategoryId, string? ByName, string? ByDescription, decimal? filterMin, decimal? filterMax, bool? SortPriceAsc, int pageNumber = 1)
         {
             var items = await resourcesService.GetAll(filterCategoryId, ByName, ByDescription, filterMin, filterMax, SortPriceAsc, pageNumber);
             return Ok(items);
@@ -45,8 +49,11 @@ namespace Shop_Api_PV421.Controllers
         }
 
         [HttpPost]
+        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
+
         public async Task<IActionResult> Create([FromBody] ResourceCreateDTO resource)
         {
+
             if (resource == null)
                 return BadRequest();
 
