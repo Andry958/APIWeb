@@ -78,7 +78,6 @@ namespace BusinessLogic.Services
         public async Task ResetPassword(string email, string token, string newPassword)
         {
             var user = await userManager.FindByEmailAsync(email);
-            Console.WriteLine(user.Login);
             if (user == null)
                 throw new HttpException("Користувача з такім емейлом немає", HttpStatusCode.BadRequest);
             

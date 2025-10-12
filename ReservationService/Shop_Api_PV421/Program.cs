@@ -12,6 +12,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using ReservationService;
+using System;
 using System.Text;
 
 
@@ -22,7 +23,6 @@ string connStr = builder.Configuration.GetConnectionString("DefaultConnection")
 
 // Add services to the container.
 builder.Services.AddControllers();
-
 
 builder.Services.AddIdentity<User, IdentityRole>(options =>
     options.SignIn.RequireConfirmedAccount = false)

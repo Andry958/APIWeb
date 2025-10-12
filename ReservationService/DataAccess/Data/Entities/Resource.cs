@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DataAccess.Enum;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -16,8 +17,9 @@ namespace DataAccess.Data.Entities
         public decimal PricePerHour { get; set; }
         public string ImageUrl { get; set; } = string.Empty;
         public decimal PriceByHour { get; set; }
-
         public bool IsActive { get; set; } = true;
+
+        public CategorySlug CategorySlug { get; set; }
 
         public Guid CategoryId { get; set; }
         public Category? Category { get; set; }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DataAccess.Enum;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,6 +14,7 @@ namespace BusinessLogic.DTOs.ResourceDTO
         public string Description { get; set; }
         public decimal PricePerHour { get; set; }
         public string ImageUrl { get; set; }
+        public CategorySlug CategorySlug { get; set; }
         public Guid CategoryId { get; set; }
     }
 }
