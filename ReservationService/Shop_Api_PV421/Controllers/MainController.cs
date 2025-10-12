@@ -14,7 +14,7 @@ namespace Shop_Api_PV421.Controllers
 {
     [Route("api/main")]
     [ApiController]
-    [Authorize]
+    //[Authorize]
 
     public class MainController : ControllerBase
     {
@@ -50,7 +50,6 @@ namespace Shop_Api_PV421.Controllers
 
         [HttpPost]
         [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
-
         public async Task<IActionResult> Create([FromBody] ResourceCreateDTO resource)
         {
 

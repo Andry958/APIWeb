@@ -105,6 +105,10 @@ namespace BusinessLogic.Services
 
         public async Task SeedResources()
         {
+            // Очищаємо старі ресурси
+            ctx.Resources.RemoveRange(ctx.Resources);
+            await ctx.SaveChangesAsync();
+
             var resources = new List<Resource>
     {
         new Resource
@@ -114,7 +118,16 @@ namespace BusinessLogic.Services
             Description = "Комфортний готель у центрі міста.",
             PricePerHour = 1200,
             ImageUrl = "https://example.com/images/hotel1.jpg",
-            CategoryId = Guid.Parse("141b39b1-5760-41bd-6f34-08de02915a7a")
+            CategoryId = Guid.Parse("447114B3-8D6C-428B-C506-08DE098055E7")
+        },
+        new Resource
+        {
+            Id = Guid.NewGuid(),
+            Name = "Апартаменти Skyline",
+            Description = "Розкішні апартаменти з видом на місто.",
+            PricePerHour = 1100,
+            ImageUrl = "https://example.com/images/hotel2.jpg",
+            CategoryId = Guid.Parse("447114B3-8D6C-428B-C506-08DE098055E7")
         },
         new Resource
         {
@@ -123,90 +136,7 @@ namespace BusinessLogic.Services
             Description = "Затишне кафе з авторською кухнею.",
             PricePerHour = 300,
             ImageUrl = "https://example.com/images/cafe1.jpg",
-            CategoryId = Guid.Parse("65e261d9-4d62-490c-6f35-08de02915a7a")
-        },
-        new Resource
-        {
-            Id = Guid.NewGuid(),
-            Name = "Футбольне поле",
-            Description = "Професійне поле зі штучним покриттям.",
-            PricePerHour = 500,
-            ImageUrl = "https://example.com/images/field1.jpg",
-            CategoryId = Guid.Parse("1d3580bb-10bc-4836-6f36-08de02915a7a")
-        },
-        new Resource
-        {
-            Id = Guid.NewGuid(),
-            Name = "Салон Lux Beauty",
-            Description = "Сучасний салон краси для жінок і чоловіків.",
-            PricePerHour = 350,
-            ImageUrl = "https://example.com/images/beauty1.jpg",
-            CategoryId = Guid.Parse("50272102-ccc4-4c9a-6f37-08de02915a7a")
-        },
-        new Resource
-        {
-            Id = Guid.NewGuid(),
-            Name = "Медичний центр Vita",
-            Description = "Приватна клініка з сучасним обладнанням.",
-            PricePerHour = 900,
-            ImageUrl = "https://example.com/images/medical1.jpg",
-            CategoryId = Guid.Parse("2f3a057e-9c40-488e-6f38-08de02915a7a")
-        },
-        new Resource
-        {
-            Id = Guid.NewGuid(),
-            Name = "Конференц-зал Orion",
-            Description = "Ідеальне місце для бізнес-заходів.",
-            PricePerHour = 1500,
-            ImageUrl = "https://example.com/images/conference1.jpg",
-            CategoryId = Guid.Parse("e4f67fd5-e586-4df1-6f39-08de02915a7a")
-        },
-        new Resource
-        {
-            Id = Guid.NewGuid(),
-            Name = "Коворкінг Freedom",
-            Description = "Сучасний простір для роботи в центрі.",
-            PricePerHour = 200,
-            ImageUrl = "https://example.com/images/coworking1.jpg",
-            CategoryId = Guid.Parse("985dbba0-7a5c-4ac8-6f3a-08de02915a7a")
-        },
-        new Resource
-        {
-            Id = Guid.NewGuid(),
-            Name = "Оренда Tesla Model 3",
-            Description = "Електромобіль преміум класу для подорожей.",
-            PricePerHour = 800,
-            ImageUrl = "https://example.com/images/car1.jpg",
-            CategoryId = Guid.Parse("2e420687-84f8-44ee-6f3b-08de02915a7a")
-        },
-        new Resource
-        {
-            Id = Guid.NewGuid(),
-            Name = "СТО АвтоСервіс",
-            Description = "Швидке та якісне обслуговування вашого авто.",
-            PricePerHour = 450,
-            ImageUrl = "https://example.com/images/service1.jpg",
-            CategoryId = Guid.Parse("d4bd21a3-c55a-400b-6f3c-08de02915a7a")
-        },
-        new Resource
-        {
-            Id = Guid.NewGuid(),
-            Name = "Квест кімната 'Втеча'",
-            Description = "Захоплюючий квест для компанії друзів.",
-            PricePerHour = 600,
-            ImageUrl = "https://example.com/images/quest1.jpg",
-            CategoryId = Guid.Parse("9a268634-4dc6-4bb1-6f3d-08de02915a7a")
-        },
-
-        // Додаткові 10 ресурсів (вигадані приклади)
-        new Resource
-        {
-            Id = Guid.NewGuid(),
-            Name = "Апартаменти Skyline",
-            Description = "Розкішні апартаменти з видом на місто.",
-            PricePerHour = 1100,
-            ImageUrl = "https://example.com/images/hotel2.jpg",
-            CategoryId = Guid.Parse("141b39b1-5760-41bd-6f34-08de02915a7a")
+            CategoryId = Guid.Parse("56930FFD-26D0-4B55-C507-08DE098055E7")
         },
         new Resource
         {
@@ -215,7 +145,16 @@ namespace BusinessLogic.Services
             Description = "Морська кухня від шеф-кухаря.",
             PricePerHour = 700,
             ImageUrl = "https://example.com/images/restaurant2.jpg",
-            CategoryId = Guid.Parse("65e261d9-4d62-490c-6f35-08de02915a7a")
+            CategoryId = Guid.Parse("56930FFD-26D0-4B55-C507-08DE098055E7")
+        },
+        new Resource
+        {
+            Id = Guid.NewGuid(),
+            Name = "Футбольне поле",
+            Description = "Професійне поле зі штучним покриттям.",
+            PricePerHour = 500,
+            ImageUrl = "https://example.com/images/field1.jpg",
+            CategoryId = Guid.Parse("7D2C4BC7-B88F-4897-C508-08DE098055E7")
         },
         new Resource
         {
@@ -224,7 +163,16 @@ namespace BusinessLogic.Services
             Description = "Зал для гри в баскетбол із сучасним покриттям.",
             PricePerHour = 400,
             ImageUrl = "https://example.com/images/sports2.jpg",
-            CategoryId = Guid.Parse("1d3580bb-10bc-4836-6f36-08de02915a7a")
+            CategoryId = Guid.Parse("7D2C4BC7-B88F-4897-C508-08DE098055E7")
+        },
+        new Resource
+        {
+            Id = Guid.NewGuid(),
+            Name = "Салон Lux Beauty",
+            Description = "Сучасний салон краси для жінок і чоловіків.",
+            PricePerHour = 350,
+            ImageUrl = "https://example.com/images/beauty1.jpg",
+            CategoryId = Guid.Parse("2F9C4E14-F2BB-404D-C509-08DE098055E7")
         },
         new Resource
         {
@@ -233,7 +181,16 @@ namespace BusinessLogic.Services
             Description = "Чоловіча перукарня у стилі лофт.",
             PricePerHour = 250,
             ImageUrl = "https://example.com/images/barber.jpg",
-            CategoryId = Guid.Parse("50272102-ccc4-4c9a-6f37-08de02915a7a")
+            CategoryId = Guid.Parse("2F9C4E14-F2BB-404D-C509-08DE098055E7")
+        },
+        new Resource
+        {
+            Id = Guid.NewGuid(),
+            Name = "Медичний центр Vita",
+            Description = "Приватна клініка з сучасним обладнанням.",
+            PricePerHour = 900,
+            ImageUrl = "https://example.com/images/medical1.jpg",
+            CategoryId = Guid.Parse("8D283918-CBAD-4775-C50A-08DE098055E7")
         },
         new Resource
         {
@@ -242,7 +199,16 @@ namespace BusinessLogic.Services
             Description = "Ультрасучасна стоматологія.",
             PricePerHour = 1000,
             ImageUrl = "https://example.com/images/dentist.jpg",
-            CategoryId = Guid.Parse("2f3a057e-9c40-488e-6f38-08de02915a7a")
+            CategoryId = Guid.Parse("8D283918-CBAD-4775-C50A-08DE098055E7")
+        },
+        new Resource
+        {
+            Id = Guid.NewGuid(),
+            Name = "Конференц-зал Orion",
+            Description = "Ідеальне місце для бізнес-заходів.",
+            PricePerHour = 1500,
+            ImageUrl = "https://example.com/images/conference1.jpg",
+            CategoryId = Guid.Parse("7D38ACEF-C00B-4CDE-C50B-08DE098055E7")
         },
         new Resource
         {
@@ -251,7 +217,16 @@ namespace BusinessLogic.Services
             Description = "Ідеальне місце для презентацій.",
             PricePerHour = 1400,
             ImageUrl = "https://example.com/images/conference2.jpg",
-            CategoryId = Guid.Parse("e4f67fd5-e586-4df1-6f39-08de02915a7a")
+            CategoryId = Guid.Parse("7D38ACEF-C00B-4CDE-C50B-08DE098055E7")
+        },
+        new Resource
+        {
+            Id = Guid.NewGuid(),
+            Name = "Коворкінг Freedom",
+            Description = "Сучасний простір для роботи в центрі.",
+            PricePerHour = 200,
+            ImageUrl = "https://example.com/images/coworking1.jpg",
+            CategoryId = Guid.Parse("41A2C07C-016E-4CAD-C50C-08DE098055E7")
         },
         new Resource
         {
@@ -260,7 +235,16 @@ namespace BusinessLogic.Services
             Description = "Тихе місце для продуктивної роботи.",
             PricePerHour = 250,
             ImageUrl = "https://example.com/images/coworking2.jpg",
-            CategoryId = Guid.Parse("985dbba0-7a5c-4ac8-6f3a-08de02915a7a")
+            CategoryId = Guid.Parse("41A2C07C-016E-4CAD-C50C-08DE098055E7")
+        },
+        new Resource
+        {
+            Id = Guid.NewGuid(),
+            Name = "Оренда Tesla Model 3",
+            Description = "Електромобіль преміум класу для подорожей.",
+            PricePerHour = 800,
+            ImageUrl = "https://example.com/images/car1.jpg",
+            CategoryId = Guid.Parse("B647014A-E117-424A-C50D-08DE098055E7")
         },
         new Resource
         {
@@ -269,7 +253,16 @@ namespace BusinessLogic.Services
             Description = "Позашляховик бізнес-класу.",
             PricePerHour = 1000,
             ImageUrl = "https://example.com/images/bmw.jpg",
-            CategoryId = Guid.Parse("2e420687-84f8-44ee-6f3b-08de02915a7a")
+            CategoryId = Guid.Parse("B647014A-E117-424A-C50D-08DE098055E7")
+        },
+        new Resource
+        {
+            Id = Guid.NewGuid(),
+            Name = "СТО АвтоСервіс",
+            Description = "Швидке та якісне обслуговування вашого авто.",
+            PricePerHour = 450,
+            ImageUrl = "https://example.com/images/service1.jpg",
+            CategoryId = Guid.Parse("5AAF91DA-52A3-4DB9-C50E-08DE098055E7")
         },
         new Resource
         {
@@ -278,7 +271,16 @@ namespace BusinessLogic.Services
             Description = "Діагностика та ремонт усіх марок авто.",
             PricePerHour = 480,
             ImageUrl = "https://example.com/images/sto2.jpg",
-            CategoryId = Guid.Parse("d4bd21a3-c55a-400b-6f3c-08de02915a7a")
+            CategoryId = Guid.Parse("5AAF91DA-52A3-4DB9-C50E-08DE098055E7")
+        },
+        new Resource
+        {
+            Id = Guid.NewGuid(),
+            Name = "Квест кімната 'Втеча'",
+            Description = "Захоплюючий квест для компанії друзів.",
+            PricePerHour = 600,
+            ImageUrl = "https://example.com/images/quest1.jpg",
+            CategoryId = Guid.Parse("DF56C072-9FDC-493F-C50F-08DE098055E7")
         },
         new Resource
         {
@@ -287,12 +289,14 @@ namespace BusinessLogic.Services
             Description = "Розваги для дітей і дорослих.",
             PricePerHour = 550,
             ImageUrl = "https://example.com/images/jump.jpg",
-            CategoryId = Guid.Parse("9a268634-4dc6-4bb1-6f3d-08de02915a7a")
+            CategoryId = Guid.Parse("DF56C072-9FDC-493F-C50F-08DE098055E7")
         }
     };
 
             await ctx.Resources.AddRangeAsync(resources);
             await ctx.SaveChangesAsync();
         }
+
+
     }
 }

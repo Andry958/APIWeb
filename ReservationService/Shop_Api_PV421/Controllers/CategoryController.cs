@@ -13,7 +13,7 @@ namespace ReservationService.Controllers
 {
     [Route("api/category")]
     [ApiController]
-    [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
+   // [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
     public class CategoryController : ControllerBase
     {
         private readonly ICategoryService categoryService;
@@ -24,7 +24,7 @@ namespace ReservationService.Controllers
         }
 
         [HttpGet("all")]
-        public async Task<IActionResult> GetAll(string? ByName, CategorySlug categorySlug,int pageNumber)
+        public async Task<IActionResult> GetAll(string? ByName, CategorySlug categorySlug,int pageNumber = 1)
         {
             var items = await categoryService.GetAll(ByName, categorySlug, pageNumber);
 

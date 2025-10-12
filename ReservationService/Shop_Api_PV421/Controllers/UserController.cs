@@ -37,7 +37,18 @@ namespace ReservationService.Controllers
             await userServices.Logout();
             return Ok("Ви успішно вийшли з акаунта");
         }
-
+        [HttpPost("forgetPassword")]
+        public async Task<IActionResult> ForgetPassword([FromQuery] string email)
+        {
+            var res = await userServices.ForgetPssword(email);
+            return Ok(res);
+        }
+        [HttpPost("resetPassword")]
+        public async Task<IActionResult> ResetPassword([FromQuery] string email, [FromQuery] string token, [FromQuery] string newPassword)
+        {
+            await userServices.ResetPassword(email, token, newPassword);
+            return Ok("Пароль успішно змінено");
+        }
 
     }
 }

@@ -64,15 +64,25 @@ namespace BusinessLogic.Services
             var users = await ctx.Users.ToListAsync();
             return mapper.Map<List<UserGetModel>>(users);
         }
-        public Task<LoginResponse> ForgetPssword(string Email)
+        public async Task<string> ForgetPssword(string Email)
         {
+            var user = await userManager.FindByEmailAsync(Email);
 
+            if (user == null)
+                throw new HttpException("Користувача з такім емейлом немає", HttpStatusCode.BadRequest);
 
-            return null;
+            var token = await userManager.GeneratePasswordResetTokenAsync(user);
+            
+            return token;
         }
-        public Task Resetpassword(string Token, string Password)
+        public async Task ResetPassword(string email, string token, string newPassword)
         {
-            return Task.CompletedTask;
+            var user = await userManager.FindByEmailAsync(email);
+            Console.WriteLine(user.Login);
+            if (user == null)
+                throw new HttpException("Користувача з такім емейлом немає", HttpStatusCode.BadRequest);
+            
+            await userManager.ResetPasswordAsync(user, token, newPassword);
         }
 
     }
