@@ -9,6 +9,7 @@ namespace DataAccess.Data.Entities
         public DateTime? Birthdate { get; set; }
         public decimal Balance { get; set; } = 0;
         public ICollection<Reservation>? Reservations { get; set; }
+        public ICollection<RefreshToken> RefreshTokens { get; set; } = new List<RefreshToken>();
 
         //public ICollection<Order>? Orders { get; set; }
     }

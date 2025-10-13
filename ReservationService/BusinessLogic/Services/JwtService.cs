@@ -9,6 +9,7 @@ using System.Collections.Generic;
 using System.IdentityModel.Tokens.Jwt;
 using System.Linq;
 using System.Security.Claims;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -19,6 +20,7 @@ namespace BusinessLogic.Services
         private readonly IConfiguration configuration;
         private readonly UserManager<User> userManager;
         private readonly JwtOptions jwtOptions;
+        private readonly RandomNumberGenerator rng = RandomNumberGenerator.Create();
 
         public JwtService(IConfiguration configuration,
             UserManager<User> userManager,
@@ -29,6 +31,19 @@ namespace BusinessLogic.Services
             this.jwtOptions = jwtOptions;
         }
 
+        public RefreshToken GenerateRefreshToken(string ipAddress)
+        {
+            var randomBytes = new byte[64];
+            rng.GetBytes(randomBytes);
+
+            return new RefreshToken
+            {
+                Token = Convert.ToBase64String(randomBytes),
+                Expires = DateTime.UtcNow.AddDays(jwtOptions.RefreshTokenExpirationDays),
+                CreatedByIp = ipAddress
+            };
+        }
+
         public string GenerateToken(IEnumerable<Claim> claims)
         {
             var securityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(jwtOptions.Key));
@@ -37,7 +52,7 @@ namespace BusinessLogic.Services
             var token = new JwtSecurityToken(
                 issuer: jwtOptions.Issuer,
                 claims: claims,
-                expires: DateTime.UtcNow.AddMinutes(jwtOptions.LifetimeInMinutes),
+                expires: DateTime.UtcNow.AddMinutes(jwtOptions.AccessTokenExpirationMinutes),
                 signingCredentials: credentials);
 
             return new JwtSecurityTokenHandler().WriteToken(token);
@@ -47,9 +62,9 @@ namespace BusinessLogic.Services
         {
             var claims = new List<Claim>
             {
-                new Claim(ClaimTypes.NameIdentifier, user.Id),
-                new Claim(ClaimTypes.Email, user.Email),
-                new Claim(ClaimTypes.DateOfBirth, user.Birthdate.ToString())
+                new(ClaimTypes.NameIdentifier, user.Id),
+                new(ClaimTypes.Email, user.Email ?? string.Empty),
+                new(ClaimTypes.DateOfBirth, user.Birthdate?.ToString() ?? string.Empty)
             };
 
             var roles = userManager.GetRolesAsync(user).Result;

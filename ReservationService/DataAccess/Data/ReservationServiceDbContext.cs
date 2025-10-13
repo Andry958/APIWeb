@@ -17,6 +17,8 @@ namespace DataAccess.Data
         public DbSet<Category> Categories { get; set; }
 
         public DbSet<Reservation> Reservations { get; set; }
+        public DbSet<RefreshToken> RefreshTokens { get; set; } = default!;
+
 
         //protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         //{

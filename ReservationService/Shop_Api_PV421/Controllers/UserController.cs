@@ -8,6 +8,9 @@ namespace ReservationService.Controllers
     {
         private readonly IUserServices userServices;
 
+        private string? CurrentIp => HttpContext.Connection.RemoteIpAddress?.ToString();
+
+
         public UserController(IUserServices userServices)
         {
             this.userServices = userServices;
@@ -28,7 +31,7 @@ namespace ReservationService.Controllers
         [HttpPost("login")]
         public async Task<IActionResult> Login([FromBody] UserLoginModel userLoginModel)
         {
-            var res = await userServices.Login(userLoginModel);
+            var res = await userServices.Login(userLoginModel, CurrentIp);
             return Ok(res);
         }
         [HttpPost("logout")]
@@ -48,6 +51,17 @@ namespace ReservationService.Controllers
         {
             await userServices.ResetPassword(email, token, newPassword);
             return Ok("Пароль успішно змінено");
+        }
+        [HttpPost("refresh")]
+        public async Task<IActionResult> Refresh(RefreshRequest model)
+        {
+            return Ok(await userServices.Refresh(model, CurrentIp));
+        }
+        [HttpDelete("delete")]
+        public async Task<IActionResult> Delete(string id)
+        {
+            await userServices.Delete(id);
+            return Ok();
         }
 
     }
