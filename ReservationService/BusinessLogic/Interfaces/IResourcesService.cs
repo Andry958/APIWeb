@@ -1,11 +1,4 @@
-﻿using BusinessLogic.DTOs.CategoryDTO;
-using BusinessLogic.DTOs.ResourceDTO;
-using DataAccess.Enum;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using BusinessLogic.DTOs.ResourceDTO;
 
 namespace BusinessLogic.Interfaces
 {

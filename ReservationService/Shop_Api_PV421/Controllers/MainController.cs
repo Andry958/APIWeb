@@ -1,14 +1,9 @@
-﻿using AutoMapper;
-using BusinessLogic.DTOs.ResourceDTO;
+﻿using BusinessLogic.DTOs.ResourceDTO;
 using BusinessLogic.Interfaces;
 using DataAccess.Data;
-using DataAccess.Data.Entities;
-using DataAccess.Enum;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using System.Xml.Linq;
 
 namespace Shop_Api_PV421.Controllers
 {
@@ -61,6 +56,8 @@ namespace Shop_Api_PV421.Controllers
         }
 
         [HttpPut]
+        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
+
         public async Task<IActionResult> Edit([FromBody] ResourceEditDTO resource)
         {
             if (resource == null)
@@ -78,6 +75,8 @@ namespace Shop_Api_PV421.Controllers
         }
 
         [HttpDelete]
+        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
+
         public async Task<IActionResult> Delete([FromQuery] Guid id)
         {
             if (id == Guid.Empty)
@@ -91,12 +90,16 @@ namespace Shop_Api_PV421.Controllers
             return Ok();
         }
         [HttpDelete("all")]
+        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
+
         public async Task<IActionResult> DeleteAll()
         {
             await resourcesService.DeleteAll();
             return Ok();
         }
         [HttpPost("seed-resources")]
+        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
+
         public async Task<IActionResult> SeedResources()
         {
             await resourcesService.SeedResources();

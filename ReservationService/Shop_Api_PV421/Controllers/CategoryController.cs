@@ -1,19 +1,15 @@
-﻿using AutoMapper;
-using BusinessLogic.DTOs.CategoryDTO;
+﻿using BusinessLogic.DTOs.CategoryDTO;
 using BusinessLogic.Interfaces;
-using DataAccess.Data;
-using DataAccess.Data.Entities;
 using DataAccess.Enum;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ReservationService.Controllers
 {
     [Route("api/category")]
     [ApiController]
-   // [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
+    [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
     public class CategoryController : ControllerBase
     {
         private readonly ICategoryService categoryService;

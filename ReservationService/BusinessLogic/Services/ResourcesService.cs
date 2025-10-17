@@ -2,15 +2,12 @@
 using BusinessLogic.Interfaces;
 using DataAccess.Data.Entities;
 using DataAccess.Data;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using DataAccess.Enum;
 using BusinessLogic.DTOs.ResourceDTO;
 using BusinessLogic.Helpers;
+using DataAccess.Repositories;
+using LinqKit;
 
 namespace BusinessLogic.Services
 {
@@ -18,9 +15,11 @@ namespace BusinessLogic.Services
     {
         private readonly ReservationServiceDbContext ctx;
         private readonly IMapper mapper;
+        private readonly IRepository<Resource> repo;
 
-        public ResourcesService(ReservationServiceDbContext ctx, IMapper mapper)
+        public ResourcesService(ReservationServiceDbContext ctx, IMapper mapper, IRepository<Resource> repo)
         {
+            this.repo = repo;
             this.ctx = ctx;
             this.mapper = mapper;
         }
@@ -39,37 +38,40 @@ namespace BusinessLogic.Services
 
             entity.CategorySlug = category;
 
-            await ctx.Resources.AddAsync(entity);
-            await ctx.SaveChangesAsync();
+            //await ctx.Resources.AddAsync(entity);
+            //await ctx.SaveChangesAsync();
 
-            // Повертаємо DTO
+            await repo.AddAsync(entity);
+
             return mapper.Map<ResourceGetDTO>(entity);
         }
         public async Task Delete(Guid id)
         {
             if (id == Guid.Empty) return;
 
-            var item = ctx.Resources.Find(id);
+            var item = await repo.GetByIdAsync(id);
+            //var item = ctx.Resources.Find(id);
             if (item == null) return;
 
-            ctx.Resources.Remove(item);
-            await ctx.SaveChangesAsync();
+            //ctx.Resources.Remove(item);
+            //await ctx.SaveChangesAsync();
 
+            await repo.DeleteAsync(item);
         }
 
         public async Task DeleteAll()
         {
-            ctx.Resources.RemoveRange(ctx.Resources);
-            await ctx.SaveChangesAsync();
+            //ctx.Resources.RemoveRange(ctx.Resources);
+            //await ctx.SaveChangesAsync();
+
+            await repo.ClearAsync();
+
         }
 
         public async Task Edit(ResourceEditDTO model)
         {
-            var existingResource = await ctx.Resources.FindAsync(model.Id);
-            if (existingResource == null) return; 
-
-            mapper.Map(model, existingResource);
-            await ctx.SaveChangesAsync();
+            if (model == null) return; 
+            await repo.UpdateAsync(mapper.Map<Resource>(model));
         }
 
         public async Task<ResourceGetDTO?> Get(Guid id)
@@ -77,47 +79,64 @@ namespace BusinessLogic.Services
             if (id == Guid.Empty)
                 return null;
 
-            var item = await ctx.Resources.FindAsync(id);
+            var item = await repo.GetByIdAsync(id);
+
             if (item == null)
                 return null;
 
             return mapper.Map<ResourceGetDTO>(item);
         }
 
-        public async Task<IList<ResourceGetDTO>> GetAll(Guid? filterCategoryId, string? ByName, string? ByDescription, decimal? filterMin, decimal? filterMax, bool? SortPriceAsc, int pageNumber = 1)
+        public async Task<IList<ResourceGetDTO>> GetAll(
+            Guid? filterCategoryId,
+            string? ByName,
+            string? ByDescription,
+            decimal? filterMin,
+            decimal? filterMax,
+            bool? SortPriceAsc,
+            int pageNumber = 1)
         {
             if (pageNumber < 1)
                 pageNumber = 1;
 
-            IQueryable<Resource> query = ctx.Resources.Include(x => x.Category);
+            var filterEx = PredicateBuilder.New<Resource>(true);
 
             if (filterCategoryId != null)
-                query = query.Where(x => x.CategoryId == filterCategoryId);
+                filterEx = filterEx.And(x => x.CategoryId == filterCategoryId);
 
-            if (ByName != null)
-                query = query.Where(x => x.Name.ToLower().Contains(ByName.ToLower()));
+            if (!string.IsNullOrWhiteSpace(ByName))
+                filterEx = filterEx.And(x => x.Name.ToLower().Contains(ByName.ToLower()));
 
-            if (ByDescription != null)
-                query = query.Where(x => x.Description.ToLower().Contains(ByDescription.ToLower()));
+            if (!string.IsNullOrWhiteSpace(ByDescription))
+                filterEx = filterEx.And(x => x.Description.ToLower().Contains(ByDescription.ToLower()));
 
-            if (filterMin != null && filterMax != null)
-                query = query.Where(x => x.PricePerHour >= filterMin && x.PricePerHour <= filterMax);
+            if (filterMin != null)
+                filterEx = filterEx.And(x => x.PricePerHour >= filterMin.Value);
+            if (filterMax != null)
+                filterEx = filterEx.And(x => x.PricePerHour <= filterMax.Value);
+
+            var query = repo.GetAllAsync(filtering: filterEx, includes: nameof(Resource.Category));
+
+            var items = await query;
+
 
             if (SortPriceAsc != null)
-                query = SortPriceAsc.Value ?
-                    query.OrderBy(x => x.PricePerHour)
-                        :
-                    query = query.OrderByDescending(x => x.PricePerHour);
+            {
+                items = SortPriceAsc.Value
+                    ? items.OrderBy(x => x.PricePerHour).ToList()
+                    : items.OrderByDescending(x => x.PricePerHour).ToList();
+            }
 
-
-            var items = await PagedList<Resource>.CreateAsync(query, pageNumber, 5);
+            int pageSize = 5;
+            items = items.Skip((pageNumber - 1) * pageSize)
+                         .Take(pageSize)
+                         .ToList();
 
             return mapper.Map<IList<ResourceGetDTO>>(items);
         }
 
         public async Task SeedResources()
         {
-            // Очищаємо старі ресурси
             ctx.Resources.RemoveRange(ctx.Resources);
             await ctx.SaveChangesAsync();
 

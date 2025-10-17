@@ -1,10 +1,4 @@
-﻿using DataAccess.Data.Entities;
-using DataAccess.Enum;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using DataAccess.Enum;
 
 namespace BusinessLogic.DTOs.CategoryDTO
 {

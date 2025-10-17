@@ -2,7 +2,7 @@
 
 namespace DataAccess.Data.Entities
 {
-    public class User : IdentityUser
+    public class User : IdentityUser, BaseEntity
     {
         public string Login { get; set; } = string.Empty;
         public string? FullName { get; set; } = "";
