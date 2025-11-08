@@ -1,0 +1,15 @@
+﻿C:\Users\111\Desktop\qqqq\APIWeb\ReservationService\Shop_Api_PV421\Controllers\CategoryController.cs
+C:\Users\111\Desktop\qqqq\APIWeb\ReservationService\Shop_Api_PV421\Controllers\MainController.cs
+C:\Users\111\Desktop\qqqq\APIWeb\ReservationService\Shop_Api_PV421\Controllers\ProductsController.cs
+C:\Users\111\Desktop\qqqq\APIWeb\ReservationService\Shop_Api_PV421\Controllers\UserController.cs
+C:\Users\111\Desktop\qqqq\APIWeb\ReservationService\Shop_Api_PV421\ErrorHandlerMiddleware.cs
+C:\Users\111\Desktop\qqqq\APIWeb\ReservationService\Shop_Api_PV421\Program.cs
+C:\Users\111\Desktop\qqqq\APIWeb\ReservationService\Shop_Api_PV421\obj\Debug\net8.0\ReservationService.GlobalUsings.g.cs
+C:\Users\111\Desktop\qqqq\APIWeb\ReservationService\Shop_Api_PV421\obj\Debug\net8.0\.NETCoreApp,Version=v8.0.AssemblyAttributes.cs
+C:\Users\111\Desktop\qqqq\APIWeb\ReservationService\Shop_Api_PV421\obj\Debug\net8.0\ReservationService.AssemblyInfo.cs
+C:\Users\111\Desktop\qqqq\APIWeb\ReservationService\Shop_Api_PV421\obj\Debug\net8.0\ReservationService.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\111\Desktop\qqqq\APIWeb\ReservationService\Shop_Api_PV421\appsettings.Development.json
+C:\Users\111\Desktop\qqqq\APIWeb\ReservationService\Shop_Api_PV421\appsettings.json
+C:\Users\111\Desktop\qqqq\APIWeb\ReservationService\Shop_Api_PV421\libman.json
+C:\Users\111\Desktop\qqqq\APIWeb\ReservationService\Shop_Api_PV421\Shop_Api_PV421.http
+C:\Users\111\Desktop\qqqq\APIWeb\ReservationService\Shop_Api_PV421\Properties\launchSettings.json
