@@ -1,0 +1,181 @@
+≥
+0BusinessLogic.DTOs.CategoryDTO.CategoryCreateDTOobject[
+CategoryCreateDTO()DBusinessLogic.DTOs.CategoryDTO.CategoryCreateDTO.CategoryCreateDTO()E
+Name.get9BusinessLogic.DTOs.CategoryDTO.CategoryCreateDTO.Name.getE
+Name.set9BusinessLogic.DTOs.CategoryDTO.CategoryCreateDTO.Name.setE
+Slug.get9BusinessLogic.DTOs.CategoryDTO.CategoryCreateDTO.Slug.getE
+Slug.set9BusinessLogic.DTOs.CategoryDTO.CategoryCreateDTO.Slug.set˝
+*BusinessLogic.DTOs.CategoryDTO.CategoryDTOobjectI
+CategoryDTO()8BusinessLogic.DTOs.CategoryDTO.CategoryDTO.CategoryDTO();
+Id.get1BusinessLogic.DTOs.CategoryDTO.CategoryDTO.Id.get;
+Id.set1BusinessLogic.DTOs.CategoryDTO.CategoryDTO.Id.set?
+Name.get3BusinessLogic.DTOs.CategoryDTO.CategoryDTO.Name.get?
+Name.set3BusinessLogic.DTOs.CategoryDTO.CategoryDTO.Name.set?
+Slug.get3BusinessLogic.DTOs.CategoryDTO.CategoryDTO.Slug.get?
+Slug.set3BusinessLogic.DTOs.CategoryDTO.CategoryDTO.Slug.setó
+*BusinessLogic.Configurations.MapperProfileAutoMapper.ProfileobjectM
+MapperProfile():BusinessLogic.Configurations.MapperProfile.MapperProfile()€
+BusinessLogic.DTOs.JwtOptionsobject:
+JwtOptions()*BusinessLogic.DTOs.JwtOptions.JwtOptions()0
+Key.get%BusinessLogic.DTOs.JwtOptions.Key.get0
+Key.set%BusinessLogic.DTOs.JwtOptions.Key.setL
+LifetimeInMinutes.get3BusinessLogic.DTOs.JwtOptions.LifetimeInMinutes.getL
+LifetimeInMinutes.set3BusinessLogic.DTOs.JwtOptions.LifetimeInMinutes.setb
+ AccessTokenExpirationMinutes.get>BusinessLogic.DTOs.JwtOptions.AccessTokenExpirationMinutes.getb
+ AccessTokenExpirationMinutes.set>BusinessLogic.DTOs.JwtOptions.AccessTokenExpirationMinutes.set^
+RefreshTokenExpirationDays.get<BusinessLogic.DTOs.JwtOptions.RefreshTokenExpirationDays.get^
+RefreshTokenExpirationDays.set<BusinessLogic.DTOs.JwtOptions.RefreshTokenExpirationDays.set6
+
+Issuer.get(BusinessLogic.DTOs.JwtOptions.Issuer.get6
+
+Issuer.set(BusinessLogic.DTOs.JwtOptions.Issuer.set¡
+0BusinessLogic.DTOs.ResourceDTO.ResourceCreateDTOobject[
+ResourceCreateDTO()DBusinessLogic.DTOs.ResourceDTO.ResourceCreateDTO.ResourceCreateDTO()E
+Name.get9BusinessLogic.DTOs.ResourceDTO.ResourceCreateDTO.Name.getE
+Name.set9BusinessLogic.DTOs.ResourceDTO.ResourceCreateDTO.Name.setS
+Description.get@BusinessLogic.DTOs.ResourceDTO.ResourceCreateDTO.Description.getS
+Description.set@BusinessLogic.DTOs.ResourceDTO.ResourceCreateDTO.Description.setU
+PricePerHour.getABusinessLogic.DTOs.ResourceDTO.ResourceCreateDTO.PricePerHour.getU
+PricePerHour.setABusinessLogic.DTOs.ResourceDTO.ResourceCreateDTO.PricePerHour.setM
+ImageUrl.get=BusinessLogic.DTOs.ResourceDTO.ResourceCreateDTO.ImageUrl.getM
+ImageUrl.set=BusinessLogic.DTOs.ResourceDTO.ResourceCreateDTO.ImageUrl.setQ
+CategoryId.get?BusinessLogic.DTOs.ResourceDTO.ResourceCreateDTO.CategoryId.getQ
+CategoryId.set?BusinessLogic.DTOs.ResourceDTO.ResourceCreateDTO.CategoryId.setß
+.BusinessLogic.DTOs.ResourceDTO.ResourceEditDTOobjectU
+ResourceEditDTO()@BusinessLogic.DTOs.ResourceDTO.ResourceEditDTO.ResourceEditDTO()?
+Id.get5BusinessLogic.DTOs.ResourceDTO.ResourceEditDTO.Id.get?
+Id.set5BusinessLogic.DTOs.ResourceDTO.ResourceEditDTO.Id.setC
+Name.get7BusinessLogic.DTOs.ResourceDTO.ResourceEditDTO.Name.getC
+Name.set7BusinessLogic.DTOs.ResourceDTO.ResourceEditDTO.Name.setQ
+Description.get>BusinessLogic.DTOs.ResourceDTO.ResourceEditDTO.Description.getQ
+Description.set>BusinessLogic.DTOs.ResourceDTO.ResourceEditDTO.Description.setS
+PricePerHour.get?BusinessLogic.DTOs.ResourceDTO.ResourceEditDTO.PricePerHour.getS
+PricePerHour.set?BusinessLogic.DTOs.ResourceDTO.ResourceEditDTO.PricePerHour.setK
+ImageUrl.get;BusinessLogic.DTOs.ResourceDTO.ResourceEditDTO.ImageUrl.getK
+ImageUrl.set;BusinessLogic.DTOs.ResourceDTO.ResourceEditDTO.ImageUrl.setO
+CategoryId.get=BusinessLogic.DTOs.ResourceDTO.ResourceEditDTO.CategoryId.getO
+CategoryId.set=BusinessLogic.DTOs.ResourceDTO.ResourceEditDTO.CategoryId.setø	
+-BusinessLogic.DTOs.ResourceDTO.ResourceGetDTOobjectR
+ResourceGetDTO()>BusinessLogic.DTOs.ResourceDTO.ResourceGetDTO.ResourceGetDTO()>
+Id.get4BusinessLogic.DTOs.ResourceDTO.ResourceGetDTO.Id.get>
+Id.set4BusinessLogic.DTOs.ResourceDTO.ResourceGetDTO.Id.setB
+Name.get6BusinessLogic.DTOs.ResourceDTO.ResourceGetDTO.Name.getB
+Name.set6BusinessLogic.DTOs.ResourceDTO.ResourceGetDTO.Name.setP
+Description.get=BusinessLogic.DTOs.ResourceDTO.ResourceGetDTO.Description.getP
+Description.set=BusinessLogic.DTOs.ResourceDTO.ResourceGetDTO.Description.setR
+PricePerHour.get>BusinessLogic.DTOs.ResourceDTO.ResourceGetDTO.PricePerHour.getR
+PricePerHour.set>BusinessLogic.DTOs.ResourceDTO.ResourceGetDTO.PricePerHour.setJ
+ImageUrl.get:BusinessLogic.DTOs.ResourceDTO.ResourceGetDTO.ImageUrl.getJ
+ImageUrl.set:BusinessLogic.DTOs.ResourceDTO.ResourceGetDTO.ImageUrl.setR
+CategorySlug.get>BusinessLogic.DTOs.ResourceDTO.ResourceGetDTO.CategorySlug.getR
+CategorySlug.set>BusinessLogic.DTOs.ResourceDTO.ResourceGetDTO.CategorySlug.setN
+CategoryId.get<BusinessLogic.DTOs.ResourceDTO.ResourceGetDTO.CategoryId.getN
+CategoryId.set<BusinessLogic.DTOs.ResourceDTO.ResourceGetDTO.CategoryId.set´
+&BusinessLogic.DTOs.Users.LoginResponseobjectI
+LoginResponse()6BusinessLogic.DTOs.Users.LoginResponse.LoginResponse()I
+AccessToken.get6BusinessLogic.DTOs.Users.LoginResponse.AccessToken.getI
+AccessToken.set6BusinessLogic.DTOs.Users.LoginResponse.AccessToken.setK
+RefreshToken.get7BusinessLogic.DTOs.Users.LoginResponse.RefreshToken.getK
+RefreshToken.set7BusinessLogic.DTOs.Users.LoginResponse.RefreshToken.sets
+$BusinessLogic.DTOs.Users.LogoutModelobjectC
+LogoutModel()2BusinessLogic.DTOs.Users.LogoutModel.LogoutModel()õ
+'BusinessLogic.DTOs.Users.RefreshRequestobjectL
+RefreshRequest()8BusinessLogic.DTOs.Users.RefreshRequest.RefreshRequest()L
+RefreshToken.get8BusinessLogic.DTOs.Users.RefreshRequest.RefreshToken.getL
+RefreshToken.set8BusinessLogic.DTOs.Users.RefreshRequest.RefreshToken.set£	
+%BusinessLogic.DTOs.Users.UserGetModelobjectF
+UserGetModel()4BusinessLogic.DTOs.Users.UserGetModel.UserGetModel()6
+Id.get,BusinessLogic.DTOs.Users.UserGetModel.Id.get6
+Id.set,BusinessLogic.DTOs.Users.UserGetModel.Id.set<
+	Login.get/BusinessLogic.DTOs.Users.UserGetModel.Login.get<
+	Login.set/BusinessLogic.DTOs.Users.UserGetModel.Login.setB
+FullName.get2BusinessLogic.DTOs.Users.UserGetModel.FullName.getB
+FullName.set2BusinessLogic.DTOs.Users.UserGetModel.FullName.set<
+	Email.get/BusinessLogic.DTOs.Users.UserGetModel.Email.get<
+	Email.set/BusinessLogic.DTOs.Users.UserGetModel.Email.setB
+DateTime.get2BusinessLogic.DTOs.Users.UserGetModel.DateTime.getB
+DateTime.set2BusinessLogic.DTOs.Users.UserGetModel.DateTime.set@
+Balance.get1BusinessLogic.DTOs.Users.UserGetModel.Balance.get@
+Balance.set1BusinessLogic.DTOs.Users.UserGetModel.Balance.setJ
+passwordHash.get6BusinessLogic.DTOs.Users.UserGetModel.passwordHash.getJ
+passwordHash.set6BusinessLogic.DTOs.Users.UserGetModel.passwordHash.setJ
+Reservations.get6BusinessLogic.DTOs.Users.UserGetModel.Reservations.getJ
+Reservations.set6BusinessLogic.DTOs.Users.UserGetModel.Reservations.setÃ	
+"BusinessLogic.Helpers.PagedList<T>"System.Collections.Generic.List<T>object≠
+CPagedList(System.Collections.Generic.IEnumerable<T>, int, int, int)fBusinessLogic.Helpers.PagedList<T>.PagedList(System.Collections.Generic.IEnumerable<T>, int, int, int)L
+CurrentPage.get9System.Collections.Generic.ICollection<T>.CurrentPage.getL
+CurrentPage.set9System.Collections.Generic.ICollection<T>.CurrentPage.setF
+PageSize.get6System.Collections.Generic.ICollection<T>.PageSize.getF
+PageSize.set6System.Collections.Generic.ICollection<T>.PageSize.setJ
+TotalCount.get8System.Collections.Generic.ICollection<T>.TotalCount.getJ
+TotalCount.set8System.Collections.Generic.ICollection<T>.TotalCount.setJ
+TotalPages.get8System.Collections.Generic.ICollection<T>.TotalPages.getJ
+TotalPages.set8System.Collections.Generic.ICollection<T>.TotalPages.set^
+IsPreviousPageExists.getBSystem.Collections.Generic.ICollection<T>.IsPreviousPageExists.get^
+IsPreviousPageExists.setBSystem.Collections.Generic.ICollection<T>.IsPreviousPageExists.setV
+IsNextPageExists.get>System.Collections.Generic.ICollection<T>.IsNextPageExists.getV
+IsNextPageExists.set>System.Collections.Generic.ICollection<T>.IsNextPageExists.setø
+*BusinessLogic.DTOs.Users.UserRegisterModelobjectU
+UserRegisterModel()>BusinessLogic.DTOs.Users.UserRegisterModel.UserRegisterModel()A
+	Login.get4BusinessLogic.DTOs.Users.UserRegisterModel.Login.getA
+	Login.set4BusinessLogic.DTOs.Users.UserRegisterModel.Login.setG
+Password.get7BusinessLogic.DTOs.Users.UserRegisterModel.Password.getG
+Password.set7BusinessLogic.DTOs.Users.UserRegisterModel.Password.setA
+	Email.get4BusinessLogic.DTOs.Users.UserRegisterModel.Email.getA
+	Email.set4BusinessLogic.DTOs.Users.UserRegisterModel.Email.setI
+Birthdate.get8BusinessLogic.DTOs.Users.UserRegisterModel.Birthdate.getI
+Birthdate.set8BusinessLogic.DTOs.Users.UserRegisterModel.Birthdate.setã
+'BusinessLogic.DTOs.Users.UserLoginModelobjectL
+UserLoginModel()8BusinessLogic.DTOs.Users.UserLoginModel.UserLoginModel()>
+	Login.get1BusinessLogic.DTOs.Users.UserLoginModel.Login.get>
+	Login.set1BusinessLogic.DTOs.Users.UserLoginModel.Login.setD
+Password.get4BusinessLogic.DTOs.Users.UserLoginModel.Password.getD
+Password.set4BusinessLogic.DTOs.Users.UserLoginModel.Password.set+
+)BusinessLogic.Interfaces.ICategoryServiceô
+BusinessLogic.HttpExceptionSystem.Exceptionobject>
+HttpException()+BusinessLogic.HttpException.HttpException()Ä
+0HttpException(string, System.Net.HttpStatusCode)LBusinessLogic.HttpException.HttpException(string, System.Net.HttpStatusCode)§
+BHttpException(string, System.Net.HttpStatusCode, System.Exception)^BusinessLogic.HttpException.HttpException(string, System.Net.HttpStatusCode, System.Exception)˘
+lHttpException(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)àBusinessLogic.HttpException.HttpException(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)<
+StatusCode.get*BusinessLogic.HttpException.StatusCode.get<
+StatusCode.set*BusinessLogic.HttpException.StatusCode.set&
+$BusinessLogic.Interfaces.IJwtServiceæ
+-BusinessLogic.Validators.CategoryDTOValidator%FluentValidation.AbstractValidator<T>object^
+CategoryDTOValidator()DBusinessLogic.Validators.CategoryDTOValidator.CategoryDTOValidator()æ
+-BusinessLogic.Validators.ResourceDTOValidator%FluentValidation.AbstractValidator<T>object^
+ResourceDTOValidator()DBusinessLogic.Validators.ResourceDTOValidator.ResourceDTOValidator()ó
+&BusinessLogic.Services.CategoryServiceobject)BusinessLogic.Interfaces.ICategoryServiceÀ
+PCategoryService(DataAccess.Data.ReservationServiceDbContext, AutoMapper.IMapper)wBusinessLogic.Services.CategoryService.CategoryService(DataAccess.Data.ReservationServiceDbContext, AutoMapper.IMapper)õ
+8Create(BusinessLogic.DTOs.CategoryDTO.CategoryCreateDTO)_BusinessLogic.Services.CategoryService.Create(BusinessLogic.DTOs.CategoryDTO.CategoryCreateDTO)Q
+Delete(System.Guid):BusinessLogic.Services.CategoryService.Delete(System.Guid)A
+DeleteAll()2BusinessLogic.Services.CategoryService.DeleteAll()ã
+0Edit(BusinessLogic.DTOs.CategoryDTO.CategoryDTO)WBusinessLogic.Services.CategoryService.Edit(BusinessLogic.DTOs.CategoryDTO.CategoryDTO)K
+Get(System.Guid)7BusinessLogic.Services.CategoryService.Get(System.Guid)è
+2GetAll(string?, DataAccess.Enum.CategorySlug, int)YBusinessLogic.Services.CategoryService.GetAll(string?, DataAccess.Enum.CategorySlug, int)K
+SeedCategories()7BusinessLogic.Services.CategoryService.SeedCategories(),
+*BusinessLogic.Interfaces.IResourcesService(
+&BusinessLogic.Interfaces.IUserServices„	
+'BusinessLogic.Services.ResourcesServiceobject*BusinessLogic.Interfaces.IResourcesService‡
+ôResourcesService(DataAccess.Data.ReservationServiceDbContext, AutoMapper.IMapper, DataAccess.Repositories.IRepository<DataAccess.Data.Entities.Resource>)¡BusinessLogic.Services.ResourcesService.ResourcesService(DataAccess.Data.ReservationServiceDbContext, AutoMapper.IMapper, DataAccess.Repositories.IRepository<DataAccess.Data.Entities.Resource>)ú
+8Create(BusinessLogic.DTOs.ResourceDTO.ResourceCreateDTO)`BusinessLogic.Services.ResourcesService.Create(BusinessLogic.DTOs.ResourceDTO.ResourceCreateDTO)R
+Delete(System.Guid);BusinessLogic.Services.ResourcesService.Delete(System.Guid)B
+DeleteAll()3BusinessLogic.Services.ResourcesService.DeleteAll()î
+4Edit(BusinessLogic.DTOs.ResourceDTO.ResourceEditDTO)\BusinessLogic.Services.ResourcesService.Edit(BusinessLogic.DTOs.ResourceDTO.ResourceEditDTO)L
+Get(System.Guid)8BusinessLogic.Services.ResourcesService.Get(System.Guid)∏
+FGetAll(System.Guid?, string?, string?, decimal?, decimal?, bool?, int)nBusinessLogic.Services.ResourcesService.GetAll(System.Guid?, string?, string?, decimal?, decimal?, bool?, int)J
+SeedResources()7BusinessLogic.Services.ResourcesService.SeedResources()Ô
+!BusinessLogic.Services.JwtServiceobject$BusinessLogic.Interfaces.IJwtServiceÙ
+¶JwtService(Microsoft.Extensions.Configuration.IConfiguration, Microsoft.AspNetCore.Identity.UserManager<DataAccess.Data.Entities.User>, BusinessLogic.DTOs.JwtOptions)»BusinessLogic.Services.JwtService.JwtService(Microsoft.Extensions.Configuration.IConfiguration, Microsoft.AspNetCore.Identity.UserManager<DataAccess.Data.Entities.User>, BusinessLogic.DTOs.JwtOptions)^
+GenerateRefreshToken(string)>BusinessLogic.Services.JwtService.GenerateRefreshToken(string)Ã
+SGenerateToken(System.Collections.Generic.IEnumerable<System.Security.Claims.Claim>)uBusinessLogic.Services.JwtService.GenerateToken(System.Collections.Generic.IEnumerable<System.Security.Claims.Claim>)v
+(GetClaims(DataAccess.Data.Entities.User)JBusinessLogic.Services.JwtService.GetClaims(DataAccess.Data.Entities.User)ﬂ
+#BusinessLogic.Services.UserServicesobject&BusinessLogic.Interfaces.IUserServicesº
+âUserServices(Microsoft.AspNetCore.Identity.UserManager<DataAccess.Data.Entities.User>, AutoMapper.IMapper, DataAccess.Data.ReservationServiceDbContext, Microsoft.AspNetCore.Identity.SignInManager<DataAccess.Data.Entities.User>, BusinessLogic.Interfaces.IJwtService)≠BusinessLogic.Services.UserServices.UserServices(Microsoft.AspNetCore.Identity.UserManager<DataAccess.Data.Entities.User>, AutoMapper.IMapper, DataAccess.Data.ReservationServiceDbContext, Microsoft.AspNetCore.Identity.SignInManager<DataAccess.Data.Entities.User>, BusinessLogic.Interfaces.IJwtService)ö
+9Refresh(BusinessLogic.DTOs.Users.RefreshRequest, string?)]BusinessLogic.Services.UserServices.Refresh(BusinessLogic.DTOs.Users.RefreshRequest, string?)ñ
+7Login(BusinessLogic.DTOs.Users.UserLoginModel, string?)[BusinessLogic.Services.UserServices.Login(BusinessLogic.DTOs.Users.UserLoginModel, string?)8
+Logout(),BusinessLogic.Services.UserServices.Logout()ê
+4Register(BusinessLogic.DTOs.Users.UserRegisterModel)XBusinessLogic.Services.UserServices.Register(BusinessLogic.DTOs.Users.UserRegisterModel)8
+GetAll(),BusinessLogic.Services.UserServices.GetAll()R
+ForgetPssword(string)9BusinessLogic.Services.UserServices.ForgetPssword(string)r
+%ResetPassword(string, string, string)IBusinessLogic.Services.UserServices.ResetPassword(string, string, string)D
+Delete(string)2BusinessLogic.Services.UserServices.Delete(string)

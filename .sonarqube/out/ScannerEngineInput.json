@@ -1,0 +1,180 @@
+{
+  "scannerProperties": [
+    {
+      "key": "sonar.scanner.app",
+      "value": "ScannerMSBuild"
+    },
+    {
+      "key": "sonar.scanner.appVersion",
+      "value": "11.0"
+    },
+    {
+      "key": "sonar.scanner.bootstrapStartTime",
+      "value": "1762597862000"
+    },
+    {
+      "key": "sonar.projectKey",
+      "value": "Andry958_APIWeb"
+    },
+    {
+      "key": "sonar.working.directory",
+      "value": "C:\\Users\\111\\Desktop\\qqqq\\APIWeb\\.sonarqube\\out\\.sonar"
+    },
+    {
+      "key": "sonar.projectBaseDir",
+      "value": "C:\\Users\\111\\Desktop\\qqqq\\APIWeb"
+    },
+    {
+      "key": "sonar.pullrequest.cache.basepath",
+      "value": "C:\\Users\\111\\Desktop\\qqqq\\APIWeb"
+    },
+    {
+      "key": "sonar.sources",
+      "value": "C:\\Users\\111\\Desktop\\qqqq\\APIWeb\\.github\\workflows\\build.yml"
+    },
+    {
+      "key": "sonar.tests",
+      "value": ""
+    },
+    {
+      "key": "sonar.modules",
+      "value": "D5A17E51-69D9-42BF-9181-13CFBE62696D,1E48056E-2882-43E6-8F74-7FFC726A5DAF,305677C5-74F0-4C07-9EF8-BDD5D3847233"
+    },
+    {
+      "key": "D5A17E51-69D9-42BF-9181-13CFBE62696D.sonar.projectKey",
+      "value": "Andry958_APIWeb:D5A17E51-69D9-42BF-9181-13CFBE62696D"
+    },
+    {
+      "key": "D5A17E51-69D9-42BF-9181-13CFBE62696D.sonar.projectName",
+      "value": "DataAccess"
+    },
+    {
+      "key": "D5A17E51-69D9-42BF-9181-13CFBE62696D.sonar.projectBaseDir",
+      "value": "C:\\Users\\111\\Desktop\\qqqq\\APIWeb\\ReservationService\\DataAccess"
+    },
+    {
+      "key": "D5A17E51-69D9-42BF-9181-13CFBE62696D.sonar.working.directory",
+      "value": "C:\\Users\\111\\Desktop\\qqqq\\APIWeb\\.sonarqube\\out\\.sonar\\mod0"
+    },
+    {
+      "key": "D5A17E51-69D9-42BF-9181-13CFBE62696D.sonar.sourceEncoding",
+      "value": "utf-8"
+    },
+    {
+      "key": "D5A17E51-69D9-42BF-9181-13CFBE62696D.sonar.tests",
+      "value": ""
+    },
+    {
+      "key": "D5A17E51-69D9-42BF-9181-13CFBE62696D.sonar.sources",
+      "value": "C:\\Users\\111\\Desktop\\qqqq\\APIWeb\\ReservationService\\DataAccess\\Data\\DbInitializer.cs,C:\\Users\\111\\Desktop\\qqqq\\APIWeb\\ReservationService\\DataAccess\\Data\\Entities\\BaseEntity.cs,C:\\Users\\111\\Desktop\\qqqq\\APIWeb\\ReservationService\\DataAccess\\Data\\Entities\\Category.cs,C:\\Users\\111\\Desktop\\qqqq\\APIWeb\\ReservationService\\DataAccess\\Data\\Entities\\RefreshToken.cs,C:\\Users\\111\\Desktop\\qqqq\\APIWeb\\ReservationService\\DataAccess\\Data\\Entities\\Reservation.cs,C:\\Users\\111\\Desktop\\qqqq\\APIWeb\\ReservationService\\DataAccess\\Data\\Entities\\Resource.cs,C:\\Users\\111\\Desktop\\qqqq\\APIWeb\\ReservationService\\DataAccess\\Data\\Entities\\User.cs,C:\\Users\\111\\Desktop\\qqqq\\APIWeb\\ReservationService\\DataAccess\\Data\\ReservationServiceDbContext.cs,C:\\Users\\111\\Desktop\\qqqq\\APIWeb\\ReservationService\\DataAccess\\Data\\ShopDbContext.cs,C:\\Users\\111\\Desktop\\qqqq\\APIWeb\\ReservationService\\DataAccess\\Enum\\BookingStatus.cs,C:\\Users\\111\\Desktop\\qqqq\\APIWeb\\ReservationService\\DataAccess\\Enum\\CategorySlug.cs,C:\\Users\\111\\Desktop\\qqqq\\APIWeb\\ReservationService\\DataAccess\\Helpers\\IQuerableExtensions.cs,C:\\Users\\111\\Desktop\\qqqq\\APIWeb\\ReservationService\\DataAccess\\Helpers\\PaginatedList.cs,C:\\Users\\111\\Desktop\\qqqq\\APIWeb\\ReservationService\\DataAccess\\Migrations\\20250925162753_q.cs,C:\\Users\\111\\Desktop\\qqqq\\APIWeb\\ReservationService\\DataAccess\\Migrations\\20250925162753_q.Designer.cs,C:\\Users\\111\\Desktop\\qqqq\\APIWeb\\ReservationService\\DataAccess\\Migrations\\20251001162432_AddCategoriesSlug.cs,C:\\Users\\111\\Desktop\\qqqq\\APIWeb\\ReservationService\\DataAccess\\Migrations\\20251001162432_AddCategoriesSlug.Designer.cs,C:\\Users\\111\\Desktop\\qqqq\\APIWeb\\ReservationService\\DataAccess\\Migrations\\20251008160946_AddReservation.cs,C:\\Users\\111\\Desktop\\qqqq\\APIWeb\\ReservationService\\DataAccess\\Migrations\\20251008160946_AddReservation.Designer.cs,C:\\Users\\111\\Desktop\\qqqq\\APIWeb\\ReservationService\\DataAccess\\Migrations\\20251012125732_InitialCreate.cs,C:\\Users\\111\\Desktop\\qqqq\\APIWeb\\ReservationService\\DataAccess\\Migrations\\20251012125732_InitialCreate.Designer.cs,C:\\Users\\111\\Desktop\\qqqq\\APIWeb\\ReservationService\\DataAccess\\Migrations\\20251013172412_AddRefreshTokens.cs,C:\\Users\\111\\Desktop\\qqqq\\APIWeb\\ReservationService\\DataAccess\\Migrations\\20251013172412_AddRefreshTokens.Designer.cs,C:\\Users\\111\\Desktop\\qqqq\\APIWeb\\ReservationService\\DataAccess\\Migrations\\ReservationServiceDbContextModelSnapshot.cs,C:\\Users\\111\\Desktop\\qqqq\\APIWeb\\ReservationService\\DataAccess\\Repositories\\IRepository.cs,C:\\Users\\111\\Desktop\\qqqq\\APIWeb\\ReservationService\\DataAccess\\Repositories\\Repository.cs,C:\\Users\\111\\Desktop\\qqqq\\APIWeb\\ReservationService\\DataAccess\\obj\\DataAccess.csproj.nuget.dgspec.json,C:\\Users\\111\\Desktop\\qqqq\\APIWeb\\ReservationService\\DataAccess\\obj\\project.assets.json,C:\\Users\\111\\Desktop\\qqqq\\APIWeb\\ReservationService\\DataAccess\\bin\\Debug\\net8.0\\DataAccess.deps.json,C:\\Users\\111\\Desktop\\qqqq\\APIWeb\\ReservationService\\DataAccess\\bin\\Debug\\net8.0\\DataAccess.runtimeconfig.json,C:\\Users\\111\\Desktop\\qqqq\\APIWeb\\ReservationService\\DataAccess\\obj\\Debug\\net8.0\\DataAccess.sourcelink.json"
+    },
+    {
+      "key": "D5A17E51-69D9-42BF-9181-13CFBE62696D.sonar.cs.analyzer.projectOutPaths",
+      "value": "C:\\Users\\111\\Desktop\\qqqq\\APIWeb\\.sonarqube\\out\\0"
+    },
+    {
+      "key": "D5A17E51-69D9-42BF-9181-13CFBE62696D.sonar.cs.roslyn.reportFilePaths",
+      "value": "C:\\Users\\111\\Desktop\\qqqq\\APIWeb\\.sonarqube\\out\\0\\Issues.json"
+    },
+    {
+      "key": "D5A17E51-69D9-42BF-9181-13CFBE62696D.sonar.cs.scanner.telemetry",
+      "value": "C:\\Users\\111\\Desktop\\qqqq\\APIWeb\\.sonarqube\\out\\0\\Telemetry.json"
+    },
+    {
+      "key": "1E48056E-2882-43E6-8F74-7FFC726A5DAF.sonar.projectKey",
+      "value": "Andry958_APIWeb:1E48056E-2882-43E6-8F74-7FFC726A5DAF"
+    },
+    {
+      "key": "1E48056E-2882-43E6-8F74-7FFC726A5DAF.sonar.projectName",
+      "value": "BusinessLogic"
+    },
+    {
+      "key": "1E48056E-2882-43E6-8F74-7FFC726A5DAF.sonar.projectBaseDir",
+      "value": "C:\\Users\\111\\Desktop\\qqqq\\APIWeb\\ReservationService\\BusinessLogic"
+    },
+    {
+      "key": "1E48056E-2882-43E6-8F74-7FFC726A5DAF.sonar.working.directory",
+      "value": "C:\\Users\\111\\Desktop\\qqqq\\APIWeb\\.sonarqube\\out\\.sonar\\mod1"
+    },
+    {
+      "key": "1E48056E-2882-43E6-8F74-7FFC726A5DAF.sonar.sourceEncoding",
+      "value": "utf-8"
+    },
+    {
+      "key": "1E48056E-2882-43E6-8F74-7FFC726A5DAF.sonar.tests",
+      "value": ""
+    },
+    {
+      "key": "1E48056E-2882-43E6-8F74-7FFC726A5DAF.sonar.sources",
+      "value": "C:\\Users\\111\\Desktop\\qqqq\\APIWeb\\ReservationService\\BusinessLogic\\obj\\BusinessLogic.csproj.nuget.dgspec.json,C:\\Users\\111\\Desktop\\qqqq\\APIWeb\\ReservationService\\BusinessLogic\\obj\\project.assets.json,C:\\Users\\111\\Desktop\\qqqq\\APIWeb\\ReservationService\\BusinessLogic\\bin\\Debug\\net8.0\\BusinessLogic.deps.json,C:\\Users\\111\\Desktop\\qqqq\\APIWeb\\ReservationService\\BusinessLogic\\bin\\Debug\\net8.0\\BusinessLogic.runtimeconfig.json,C:\\Users\\111\\Desktop\\qqqq\\APIWeb\\ReservationService\\BusinessLogic\\obj\\Debug\\net8.0\\BusinessLogic.sourcelink.json,C:\\Users\\111\\Desktop\\qqqq\\APIWeb\\ReservationService\\BusinessLogic\\Configurations\\MapperProfile.cs,C:\\Users\\111\\Desktop\\qqqq\\APIWeb\\ReservationService\\BusinessLogic\\DTOs\\CategoryDTO\\CategoruCreateDTO.cs,C:\\Users\\111\\Desktop\\qqqq\\APIWeb\\ReservationService\\BusinessLogic\\DTOs\\CategoryDTO\\CategoryGetDTO.cs,C:\\Users\\111\\Desktop\\qqqq\\APIWeb\\ReservationService\\BusinessLogic\\DTOs\\JwtOptions.cs,C:\\Users\\111\\Desktop\\qqqq\\APIWeb\\ReservationService\\BusinessLogic\\DTOs\\ResourceDTO\\ResourceCreateDTO.cs,C:\\Users\\111\\Desktop\\qqqq\\APIWeb\\ReservationService\\BusinessLogic\\DTOs\\ResourceDTO\\ResourceEditDTO.cs,C:\\Users\\111\\Desktop\\qqqq\\APIWeb\\ReservationService\\BusinessLogic\\DTOs\\ResourceDTO\\ResourceGetDTO.cs,C:\\Users\\111\\Desktop\\qqqq\\APIWeb\\ReservationService\\BusinessLogic\\DTOs\\Users\\LoginResponse.cs,C:\\Users\\111\\Desktop\\qqqq\\APIWeb\\ReservationService\\BusinessLogic\\DTOs\\Users\\LogoutModel.cs,C:\\Users\\111\\Desktop\\qqqq\\APIWeb\\ReservationService\\BusinessLogic\\DTOs\\Users\\RefreshRequest.cs,C:\\Users\\111\\Desktop\\qqqq\\APIWeb\\ReservationService\\BusinessLogic\\DTOs\\Users\\UserGetModel.cs,C:\\Users\\111\\Desktop\\qqqq\\APIWeb\\ReservationService\\BusinessLogic\\DTOs\\Users\\UserLoginModel.cs,C:\\Users\\111\\Desktop\\qqqq\\APIWeb\\ReservationService\\BusinessLogic\\DTOs\\Users\\UserRegisterModel.cs,C:\\Users\\111\\Desktop\\qqqq\\APIWeb\\ReservationService\\BusinessLogic\\Helpers\\PaginatedList.cs,C:\\Users\\111\\Desktop\\qqqq\\APIWeb\\ReservationService\\BusinessLogic\\HttpException.cs,C:\\Users\\111\\Desktop\\qqqq\\APIWeb\\ReservationService\\BusinessLogic\\Interfaces\\ICategoryService.cs,C:\\Users\\111\\Desktop\\qqqq\\APIWeb\\ReservationService\\BusinessLogic\\Interfaces\\IJwtService.cs,C:\\Users\\111\\Desktop\\qqqq\\APIWeb\\ReservationService\\BusinessLogic\\Interfaces\\IResourcesService.cs,C:\\Users\\111\\Desktop\\qqqq\\APIWeb\\ReservationService\\BusinessLogic\\Interfaces\\IUserServices.cs,C:\\Users\\111\\Desktop\\qqqq\\APIWeb\\ReservationService\\BusinessLogic\\Services\\CategoryService.cs,C:\\Users\\111\\Desktop\\qqqq\\APIWeb\\ReservationService\\BusinessLogic\\Services\\JwtService.cs,C:\\Users\\111\\Desktop\\qqqq\\APIWeb\\ReservationService\\BusinessLogic\\Services\\ResourcesService.cs,C:\\Users\\111\\Desktop\\qqqq\\APIWeb\\ReservationService\\BusinessLogic\\Services\\UserServices.cs,C:\\Users\\111\\Desktop\\qqqq\\APIWeb\\ReservationService\\BusinessLogic\\Validators\\CategoryDTOValidator.cs,C:\\Users\\111\\Desktop\\qqqq\\APIWeb\\ReservationService\\BusinessLogic\\Validators\\ResourceDTOValidator.cs"
+    },
+    {
+      "key": "1E48056E-2882-43E6-8F74-7FFC726A5DAF.sonar.cs.analyzer.projectOutPaths",
+      "value": "C:\\Users\\111\\Desktop\\qqqq\\APIWeb\\.sonarqube\\out\\1"
+    },
+    {
+      "key": "1E48056E-2882-43E6-8F74-7FFC726A5DAF.sonar.cs.roslyn.reportFilePaths",
+      "value": "C:\\Users\\111\\Desktop\\qqqq\\APIWeb\\.sonarqube\\out\\1\\Issues.json"
+    },
+    {
+      "key": "1E48056E-2882-43E6-8F74-7FFC726A5DAF.sonar.cs.scanner.telemetry",
+      "value": "C:\\Users\\111\\Desktop\\qqqq\\APIWeb\\.sonarqube\\out\\1\\Telemetry.json"
+    },
+    {
+      "key": "305677C5-74F0-4C07-9EF8-BDD5D3847233.sonar.projectKey",
+      "value": "Andry958_APIWeb:305677C5-74F0-4C07-9EF8-BDD5D3847233"
+    },
+    {
+      "key": "305677C5-74F0-4C07-9EF8-BDD5D3847233.sonar.projectName",
+      "value": "ReservationService"
+    },
+    {
+      "key": "305677C5-74F0-4C07-9EF8-BDD5D3847233.sonar.projectBaseDir",
+      "value": "C:\\Users\\111\\Desktop\\qqqq\\APIWeb\\ReservationService\\Shop_Api_PV421"
+    },
+    {
+      "key": "305677C5-74F0-4C07-9EF8-BDD5D3847233.sonar.working.directory",
+      "value": "C:\\Users\\111\\Desktop\\qqqq\\APIWeb\\.sonarqube\\out\\.sonar\\mod2"
+    },
+    {
+      "key": "305677C5-74F0-4C07-9EF8-BDD5D3847233.sonar.sourceEncoding",
+      "value": "utf-8"
+    },
+    {
+      "key": "305677C5-74F0-4C07-9EF8-BDD5D3847233.sonar.tests",
+      "value": ""
+    },
+    {
+      "key": "305677C5-74F0-4C07-9EF8-BDD5D3847233.sonar.sources",
+      "value": "C:\\Users\\111\\Desktop\\qqqq\\APIWeb\\ReservationService\\Shop_Api_PV421\\appsettings.Development.json,C:\\Users\\111\\Desktop\\qqqq\\APIWeb\\ReservationService\\Shop_Api_PV421\\appsettings.json,C:\\Users\\111\\Desktop\\qqqq\\APIWeb\\ReservationService\\Shop_Api_PV421\\libman.json,C:\\Users\\111\\Desktop\\qqqq\\APIWeb\\ReservationService\\Shop_Api_PV421\\obj\\project.assets.json,C:\\Users\\111\\Desktop\\qqqq\\APIWeb\\ReservationService\\Shop_Api_PV421\\obj\\ReservationService.csproj.nuget.dgspec.json,C:\\Users\\111\\Desktop\\qqqq\\APIWeb\\ReservationService\\Shop_Api_PV421\\Properties\\launchSettings.json,C:\\Users\\111\\Desktop\\qqqq\\APIWeb\\ReservationService\\Shop_Api_PV421\\bin\\Debug\\net8.0\\appsettings.Development.json,C:\\Users\\111\\Desktop\\qqqq\\APIWeb\\ReservationService\\Shop_Api_PV421\\bin\\Debug\\net8.0\\appsettings.json,C:\\Users\\111\\Desktop\\qqqq\\APIWeb\\ReservationService\\Shop_Api_PV421\\bin\\Debug\\net8.0\\libman.json,C:\\Users\\111\\Desktop\\qqqq\\APIWeb\\ReservationService\\Shop_Api_PV421\\bin\\Debug\\net8.0\\ReservationService.deps.json,C:\\Users\\111\\Desktop\\qqqq\\APIWeb\\ReservationService\\Shop_Api_PV421\\bin\\Debug\\net8.0\\ReservationService.runtimeconfig.json,C:\\Users\\111\\Desktop\\qqqq\\APIWeb\\ReservationService\\Shop_Api_PV421\\obj\\Debug\\net8.0\\ReservationService.sourcelink.json,C:\\Users\\111\\Desktop\\qqqq\\APIWeb\\ReservationService\\Shop_Api_PV421\\obj\\Debug\\net8.0\\staticwebassets.build.json,C:\\Users\\111\\Desktop\\qqqq\\APIWeb\\ReservationService\\Shop_Api_PV421\\Controllers\\CategoryController.cs,C:\\Users\\111\\Desktop\\qqqq\\APIWeb\\ReservationService\\Shop_Api_PV421\\Controllers\\MainController.cs,C:\\Users\\111\\Desktop\\qqqq\\APIWeb\\ReservationService\\Shop_Api_PV421\\Controllers\\ProductsController.cs,C:\\Users\\111\\Desktop\\qqqq\\APIWeb\\ReservationService\\Shop_Api_PV421\\Controllers\\UserController.cs,C:\\Users\\111\\Desktop\\qqqq\\APIWeb\\ReservationService\\Shop_Api_PV421\\ErrorHandlerMiddleware.cs,C:\\Users\\111\\Desktop\\qqqq\\APIWeb\\ReservationService\\Shop_Api_PV421\\Program.cs,C:\\Users\\111\\Desktop\\qqqq\\APIWeb\\ReservationService\\Shop_Api_PV421\\obj\\Debug\\net8.0\\ReservationService.GlobalUsings.g.cs,\"C:\\Users\\111\\Desktop\\qqqq\\APIWeb\\ReservationService\\Shop_Api_PV421\\obj\\Debug\\net8.0\\.NETCoreApp,Version=v8.0.AssemblyAttributes.cs\",C:\\Users\\111\\Desktop\\qqqq\\APIWeb\\ReservationService\\Shop_Api_PV421\\obj\\Debug\\net8.0\\ReservationService.AssemblyInfo.cs,C:\\Users\\111\\Desktop\\qqqq\\APIWeb\\ReservationService\\Shop_Api_PV421\\obj\\Debug\\net8.0\\ReservationService.MvcApplicationPartsAssemblyInfo.cs,C:\\Users\\111\\Desktop\\qqqq\\APIWeb\\ReservationService\\Shop_Api_PV421\\Shop_Api_PV421.http"
+    },
+    {
+      "key": "305677C5-74F0-4C07-9EF8-BDD5D3847233.sonar.cs.analyzer.projectOutPaths",
+      "value": "C:\\Users\\111\\Desktop\\qqqq\\APIWeb\\.sonarqube\\out\\2"
+    },
+    {
+      "key": "305677C5-74F0-4C07-9EF8-BDD5D3847233.sonar.cs.roslyn.reportFilePaths",
+      "value": "C:\\Users\\111\\Desktop\\qqqq\\APIWeb\\.sonarqube\\out\\2\\Issues.json"
+    },
+    {
+      "key": "305677C5-74F0-4C07-9EF8-BDD5D3847233.sonar.cs.scanner.telemetry",
+      "value": "C:\\Users\\111\\Desktop\\qqqq\\APIWeb\\.sonarqube\\out\\2\\Telemetry.json"
+    },
+    {
+      "key": "sonar.login",
+      "value": "***"
+    },
+    {
+      "key": "sonar.organization",
+      "value": "andry958"
+    },
+    {
+      "key": "sonar.visualstudio.enable",
+      "value": "false"
+    },
+    {
+      "key": "sonar.host.url",
+      "value": "https://sonarcloud.io"
+    }
+  ]
+}

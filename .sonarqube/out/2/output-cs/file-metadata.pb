@@ -1,0 +1,11 @@
+ï
+âC:\Users\111\Desktop\qqqq\APIWeb\ReservationService\Shop_Api_PV421\obj\Debug\net8.0\ReservationService.MvcApplicationPartsAssemblyInfo.csutf-8Å
+vC:\Users\111\Desktop\qqqq\APIWeb\ReservationService\Shop_Api_PV421\obj\Debug\net8.0\ReservationService.AssemblyInfo.csutf-8é
+ÇC:\Users\111\Desktop\qqqq\APIWeb\ReservationService\Shop_Api_PV421\obj\Debug\net8.0\.NETCoreApp,Version=v8.0.AssemblyAttributes.csutf-8É
+xC:\Users\111\Desktop\qqqq\APIWeb\ReservationService\Shop_Api_PV421\obj\Debug\net8.0\ReservationService.GlobalUsings.g.csutf-8V
+MC:\Users\111\Desktop\qqqq\APIWeb\ReservationService\Shop_Api_PV421\Program.csutf-8e
+\C:\Users\111\Desktop\qqqq\APIWeb\ReservationService\Shop_Api_PV421\ErrorHandlerMiddleware.csutf-8i
+`C:\Users\111\Desktop\qqqq\APIWeb\ReservationService\Shop_Api_PV421\Controllers\UserController.csutf-8m
+dC:\Users\111\Desktop\qqqq\APIWeb\ReservationService\Shop_Api_PV421\Controllers\ProductsController.csutf-8i
+`C:\Users\111\Desktop\qqqq\APIWeb\ReservationService\Shop_Api_PV421\Controllers\MainController.csutf-8m
+dC:\Users\111\Desktop\qqqq\APIWeb\ReservationService\Shop_Api_PV421\Controllers\CategoryController.csutf-8

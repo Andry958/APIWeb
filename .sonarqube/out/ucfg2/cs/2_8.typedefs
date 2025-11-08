@@ -1,0 +1,40 @@
+Ÿ
+)ReservationService.ErrorHandlerMiddlewareobject∞
+AErrorHandlerMiddleware(Microsoft.AspNetCore.Http.RequestDelegate)kReservationService.ErrorHandlerMiddleware.ErrorHandlerMiddleware(Microsoft.AspNetCore.Http.RequestDelegate)í
+2InvokeAsync(Microsoft.AspNetCore.Http.HttpContext)\ReservationService.ErrorHandlerMiddleware.InvokeAsync(Microsoft.AspNetCore.Http.HttpContext)€
+VSendResponse(Microsoft.AspNetCore.Http.HttpContext, string, System.Net.HttpStatusCode)ÄReservationService.ErrorHandlerMiddleware.SendResponse(Microsoft.AspNetCore.Http.HttpContext, string, System.Net.HttpStatusCode)“
+1ReservationService.Controllers.CategoryController'Microsoft.AspNetCore.Mvc.ControllerBaseobject∞
+=CategoryController(BusinessLogic.Interfaces.ICategoryService)oReservationService.Controllers.CategoryController.CategoryController(BusinessLogic.Interfaces.ICategoryService)ö
+2GetAll(string?, DataAccess.Enum.CategorySlug, int)dReservationService.Controllers.CategoryController.GetAll(string?, DataAccess.Enum.CategorySlug, int)V
+Get(System.Guid)BReservationService.Controllers.CategoryController.Get(System.Guid)¶
+8Create(BusinessLogic.DTOs.CategoryDTO.CategoryCreateDTO)jReservationService.Controllers.CategoryController.Create(BusinessLogic.DTOs.CategoryDTO.CategoryCreateDTO)ñ
+0Edit(BusinessLogic.DTOs.CategoryDTO.CategoryDTO)bReservationService.Controllers.CategoryController.Edit(BusinessLogic.DTOs.CategoryDTO.CategoryDTO)\
+Delete(System.Guid)EReservationService.Controllers.CategoryController.Delete(System.Guid)L
+DeleteAll()=ReservationService.Controllers.CategoryController.DeleteAll()V
+SeedCategories()BReservationService.Controllers.CategoryController.SeedCategories()ç	
+)Shop_Api_PV421.Controllers.MainController'Microsoft.AspNetCore.Mvc.ControllerBaseobject˝
+gMainController(BusinessLogic.Interfaces.IResourcesService, DataAccess.Data.ReservationServiceDbContext)ëShop_Api_PV421.Controllers.MainController.MainController(BusinessLogic.Interfaces.IResourcesService, DataAccess.Data.ReservationServiceDbContext)∫
+FGetAll(System.Guid?, string?, string?, decimal?, decimal?, bool?, int)pShop_Api_PV421.Controllers.MainController.GetAll(System.Guid?, string?, string?, decimal?, decimal?, bool?, int)N
+Get(System.Guid):Shop_Api_PV421.Controllers.MainController.Get(System.Guid)û
+8Create(BusinessLogic.DTOs.ResourceDTO.ResourceCreateDTO)bShop_Api_PV421.Controllers.MainController.Create(BusinessLogic.DTOs.ResourceDTO.ResourceCreateDTO)ñ
+4Edit(BusinessLogic.DTOs.ResourceDTO.ResourceEditDTO)^Shop_Api_PV421.Controllers.MainController.Edit(BusinessLogic.DTOs.ResourceDTO.ResourceEditDTO)T
+Delete(System.Guid)=Shop_Api_PV421.Controllers.MainController.Delete(System.Guid)D
+DeleteAll()5Shop_Api_PV421.Controllers.MainController.DeleteAll()L
+SeedResources()9Shop_Api_PV421.Controllers.MainController.SeedResources()ª
+
+-ReservationService.Controllers.UserController#Microsoft.AspNetCore.Mvc.Controller'Microsoft.AspNetCore.Mvc.ControllerBaseobjectû
+6UserController(BusinessLogic.Interfaces.IUserServices)dReservationService.Controllers.UserController.UserController(BusinessLogic.Interfaces.IUserServices)ö
+4Register(BusinessLogic.DTOs.Users.UserRegisterModel)bReservationService.Controllers.UserController.Register(BusinessLogic.DTOs.Users.UserRegisterModel)B
+Getall()6ReservationService.Controllers.UserController.Getall()é
+.Login(BusinessLogic.DTOs.Users.UserLoginModel)\ReservationService.Controllers.UserController.Login(BusinessLogic.DTOs.Users.UserLoginModel)B
+Logout()6ReservationService.Controllers.UserController.Logout()^
+ForgetPassword(string)DReservationService.Controllers.UserController.ForgetPassword(string)|
+%ResetPassword(string, string, string)SReservationService.Controllers.UserController.ResetPassword(string, string, string)í
+0Refresh(BusinessLogic.DTOs.Users.RefreshRequest)^ReservationService.Controllers.UserController.Refresh(BusinessLogic.DTOs.Users.RefreshRequest)N
+Delete(string)<ReservationService.Controllers.UserController.Delete(string)L
+CurrentIp.get;ReservationService.Controllers.UserController.CurrentIp.getL
+CurrentIp.set;ReservationService.Controllers.UserController.CurrentIp.set1
+Programobject
+	Program()Program.Program()º
+-Shop_Api_PV421.Controllers.ProductsController'Microsoft.AspNetCore.Mvc.ControllerBaseobjectZ
+ProductsController()BShop_Api_PV421.Controllers.ProductsController.ProductsController()

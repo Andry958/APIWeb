@@ -1,0 +1,2131 @@
+{
+  "$schema": "http://json.schemastore.org/sarif-1.0.0",
+  "version": "1.0.0",
+  "runs": [
+    {
+      "tool": {
+        "name": "Компилятор Microsoft (R) Visual C#",
+        "version": "4.11.0.0",
+        "fileVersion": "4.11.0-3.24554.2 (bc1c3011)",
+        "semanticVersion": "4.11.0",
+        "language": "ru-RU"
+      },
+      "results": [
+        {
+          "ruleId": "CS0436",
+          "level": "warning",
+          "message": "Тип \"PagedList<T>\" в \"C:\\Users\\111\\Desktop\\qqqq\\APIWeb\\ReservationService\\BusinessLogic\\Helpers\\PaginatedList.cs\" конфликтует с импортированным типом \"PagedList<T>\" в \"DataAccess, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null\". Используется тип, определенный в \"C:\\Users\\111\\Desktop\\qqqq\\APIWeb\\ReservationService\\BusinessLogic\\Helpers\\PaginatedList.cs\".",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/111/Desktop/qqqq/APIWeb/ReservationService/BusinessLogic/Helpers/PaginatedList.cs",
+                "region": {
+                  "startLine": 23,
+                  "startColumn": 34,
+                  "endLine": 23,
+                  "endColumn": 46
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 2
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "свойство \"Login\", не допускающий значения NULL, должен содержать значение, отличное от NULL, при выходе из конструктора. Рассмотрите возможность добавления модификатора \"required\" или объявления значения свойство, допускающего значение NULL.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/111/Desktop/qqqq/APIWeb/ReservationService/BusinessLogic/DTOs/Users/UserRegisterModel.cs",
+                "region": {
+                  "startLine": 5,
+                  "startColumn": 23,
+                  "endLine": 5,
+                  "endColumn": 28
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/111/Desktop/qqqq/APIWeb/ReservationService/BusinessLogic/DTOs/Users/UserRegisterModel.cs",
+                "region": {
+                  "startLine": 5,
+                  "startColumn": 23,
+                  "endLine": 5,
+                  "endColumn": 28
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "свойство \"Password\", не допускающий значения NULL, должен содержать значение, отличное от NULL, при выходе из конструктора. Рассмотрите возможность добавления модификатора \"required\" или объявления значения свойство, допускающего значение NULL.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/111/Desktop/qqqq/APIWeb/ReservationService/BusinessLogic/DTOs/Users/UserRegisterModel.cs",
+                "region": {
+                  "startLine": 6,
+                  "startColumn": 23,
+                  "endLine": 6,
+                  "endColumn": 31
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/111/Desktop/qqqq/APIWeb/ReservationService/BusinessLogic/DTOs/Users/UserRegisterModel.cs",
+                "region": {
+                  "startLine": 6,
+                  "startColumn": 23,
+                  "endLine": 6,
+                  "endColumn": 31
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "свойство \"Email\", не допускающий значения NULL, должен содержать значение, отличное от NULL, при выходе из конструктора. Рассмотрите возможность добавления модификатора \"required\" или объявления значения свойство, допускающего значение NULL.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/111/Desktop/qqqq/APIWeb/ReservationService/BusinessLogic/DTOs/Users/UserRegisterModel.cs",
+                "region": {
+                  "startLine": 7,
+                  "startColumn": 23,
+                  "endLine": 7,
+                  "endColumn": 28
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/111/Desktop/qqqq/APIWeb/ReservationService/BusinessLogic/DTOs/Users/UserRegisterModel.cs",
+                "region": {
+                  "startLine": 7,
+                  "startColumn": 23,
+                  "endLine": 7,
+                  "endColumn": 28
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "свойство \"Login\", не допускающий значения NULL, должен содержать значение, отличное от NULL, при выходе из конструктора. Рассмотрите возможность добавления модификатора \"required\" или объявления значения свойство, допускающего значение NULL.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/111/Desktop/qqqq/APIWeb/ReservationService/BusinessLogic/DTOs/Users/UserLoginModel.cs",
+                "region": {
+                  "startLine": 5,
+                  "startColumn": 23,
+                  "endLine": 5,
+                  "endColumn": 28
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/111/Desktop/qqqq/APIWeb/ReservationService/BusinessLogic/DTOs/Users/UserLoginModel.cs",
+                "region": {
+                  "startLine": 5,
+                  "startColumn": 23,
+                  "endLine": 5,
+                  "endColumn": 28
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "свойство \"Password\", не допускающий значения NULL, должен содержать значение, отличное от NULL, при выходе из конструктора. Рассмотрите возможность добавления модификатора \"required\" или объявления значения свойство, допускающего значение NULL.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/111/Desktop/qqqq/APIWeb/ReservationService/BusinessLogic/DTOs/Users/UserLoginModel.cs",
+                "region": {
+                  "startLine": 6,
+                  "startColumn": 23,
+                  "endLine": 6,
+                  "endColumn": 31
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/111/Desktop/qqqq/APIWeb/ReservationService/BusinessLogic/DTOs/Users/UserLoginModel.cs",
+                "region": {
+                  "startLine": 6,
+                  "startColumn": 23,
+                  "endLine": 6,
+                  "endColumn": 31
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "свойство \"Login\", не допускающий значения NULL, должен содержать значение, отличное от NULL, при выходе из конструктора. Рассмотрите возможность добавления модификатора \"required\" или объявления значения свойство, допускающего значение NULL.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/111/Desktop/qqqq/APIWeb/ReservationService/BusinessLogic/DTOs/Users/UserGetModel.cs",
+                "region": {
+                  "startLine": 8,
+                  "startColumn": 23,
+                  "endLine": 8,
+                  "endColumn": 28
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/111/Desktop/qqqq/APIWeb/ReservationService/BusinessLogic/DTOs/Users/UserGetModel.cs",
+                "region": {
+                  "startLine": 8,
+                  "startColumn": 23,
+                  "endLine": 8,
+                  "endColumn": 28
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "свойство \"FullName\", не допускающий значения NULL, должен содержать значение, отличное от NULL, при выходе из конструктора. Рассмотрите возможность добавления модификатора \"required\" или объявления значения свойство, допускающего значение NULL.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/111/Desktop/qqqq/APIWeb/ReservationService/BusinessLogic/DTOs/Users/UserGetModel.cs",
+                "region": {
+                  "startLine": 9,
+                  "startColumn": 23,
+                  "endLine": 9,
+                  "endColumn": 31
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/111/Desktop/qqqq/APIWeb/ReservationService/BusinessLogic/DTOs/Users/UserGetModel.cs",
+                "region": {
+                  "startLine": 9,
+                  "startColumn": 23,
+                  "endLine": 9,
+                  "endColumn": 31
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "свойство \"Email\", не допускающий значения NULL, должен содержать значение, отличное от NULL, при выходе из конструктора. Рассмотрите возможность добавления модификатора \"required\" или объявления значения свойство, допускающего значение NULL.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/111/Desktop/qqqq/APIWeb/ReservationService/BusinessLogic/DTOs/Users/UserGetModel.cs",
+                "region": {
+                  "startLine": 10,
+                  "startColumn": 23,
+                  "endLine": 10,
+                  "endColumn": 28
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/111/Desktop/qqqq/APIWeb/ReservationService/BusinessLogic/DTOs/Users/UserGetModel.cs",
+                "region": {
+                  "startLine": 10,
+                  "startColumn": 23,
+                  "endLine": 10,
+                  "endColumn": 28
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "свойство \"passwordHash\", не допускающий значения NULL, должен содержать значение, отличное от NULL, при выходе из конструктора. Рассмотрите возможность добавления модификатора \"required\" или объявления значения свойство, допускающего значение NULL.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/111/Desktop/qqqq/APIWeb/ReservationService/BusinessLogic/DTOs/Users/UserGetModel.cs",
+                "region": {
+                  "startLine": 13,
+                  "startColumn": 23,
+                  "endLine": 13,
+                  "endColumn": 35
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/111/Desktop/qqqq/APIWeb/ReservationService/BusinessLogic/DTOs/Users/UserGetModel.cs",
+                "region": {
+                  "startLine": 13,
+                  "startColumn": 23,
+                  "endLine": 13,
+                  "endColumn": 35
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "свойство \"RefreshToken\", не допускающий значения NULL, должен содержать значение, отличное от NULL, при выходе из конструктора. Рассмотрите возможность добавления модификатора \"required\" или объявления значения свойство, допускающего значение NULL.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/111/Desktop/qqqq/APIWeb/ReservationService/BusinessLogic/DTOs/Users/RefreshRequest.cs",
+                "region": {
+                  "startLine": 5,
+                  "startColumn": 23,
+                  "endLine": 5,
+                  "endColumn": 35
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/111/Desktop/qqqq/APIWeb/ReservationService/BusinessLogic/DTOs/Users/RefreshRequest.cs",
+                "region": {
+                  "startLine": 5,
+                  "startColumn": 23,
+                  "endLine": 5,
+                  "endColumn": 35
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "свойство \"AccessToken\", не допускающий значения NULL, должен содержать значение, отличное от NULL, при выходе из конструктора. Рассмотрите возможность добавления модификатора \"required\" или объявления значения свойство, допускающего значение NULL.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/111/Desktop/qqqq/APIWeb/ReservationService/BusinessLogic/DTOs/Users/LoginResponse.cs",
+                "region": {
+                  "startLine": 5,
+                  "startColumn": 23,
+                  "endLine": 5,
+                  "endColumn": 34
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/111/Desktop/qqqq/APIWeb/ReservationService/BusinessLogic/DTOs/Users/LoginResponse.cs",
+                "region": {
+                  "startLine": 5,
+                  "startColumn": 23,
+                  "endLine": 5,
+                  "endColumn": 34
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "свойство \"RefreshToken\", не допускающий значения NULL, должен содержать значение, отличное от NULL, при выходе из конструктора. Рассмотрите возможность добавления модификатора \"required\" или объявления значения свойство, допускающего значение NULL.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/111/Desktop/qqqq/APIWeb/ReservationService/BusinessLogic/DTOs/Users/LoginResponse.cs",
+                "region": {
+                  "startLine": 6,
+                  "startColumn": 23,
+                  "endLine": 6,
+                  "endColumn": 35
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/111/Desktop/qqqq/APIWeb/ReservationService/BusinessLogic/DTOs/Users/LoginResponse.cs",
+                "region": {
+                  "startLine": 6,
+                  "startColumn": 23,
+                  "endLine": 6,
+                  "endColumn": 35
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "свойство \"Name\", не допускающий значения NULL, должен содержать значение, отличное от NULL, при выходе из конструктора. Рассмотрите возможность добавления модификатора \"required\" или объявления значения свойство, допускающего значение NULL.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/111/Desktop/qqqq/APIWeb/ReservationService/BusinessLogic/DTOs/ResourceDTO/ResourceGetDTO.cs",
+                "region": {
+                  "startLine": 8,
+                  "startColumn": 23,
+                  "endLine": 8,
+                  "endColumn": 27
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/111/Desktop/qqqq/APIWeb/ReservationService/BusinessLogic/DTOs/ResourceDTO/ResourceGetDTO.cs",
+                "region": {
+                  "startLine": 8,
+                  "startColumn": 23,
+                  "endLine": 8,
+                  "endColumn": 27
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "свойство \"Description\", не допускающий значения NULL, должен содержать значение, отличное от NULL, при выходе из конструктора. Рассмотрите возможность добавления модификатора \"required\" или объявления значения свойство, допускающего значение NULL.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/111/Desktop/qqqq/APIWeb/ReservationService/BusinessLogic/DTOs/ResourceDTO/ResourceGetDTO.cs",
+                "region": {
+                  "startLine": 9,
+                  "startColumn": 23,
+                  "endLine": 9,
+                  "endColumn": 34
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/111/Desktop/qqqq/APIWeb/ReservationService/BusinessLogic/DTOs/ResourceDTO/ResourceGetDTO.cs",
+                "region": {
+                  "startLine": 9,
+                  "startColumn": 23,
+                  "endLine": 9,
+                  "endColumn": 34
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "свойство \"ImageUrl\", не допускающий значения NULL, должен содержать значение, отличное от NULL, при выходе из конструктора. Рассмотрите возможность добавления модификатора \"required\" или объявления значения свойство, допускающего значение NULL.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/111/Desktop/qqqq/APIWeb/ReservationService/BusinessLogic/DTOs/ResourceDTO/ResourceGetDTO.cs",
+                "region": {
+                  "startLine": 11,
+                  "startColumn": 23,
+                  "endLine": 11,
+                  "endColumn": 31
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/111/Desktop/qqqq/APIWeb/ReservationService/BusinessLogic/DTOs/ResourceDTO/ResourceGetDTO.cs",
+                "region": {
+                  "startLine": 11,
+                  "startColumn": 23,
+                  "endLine": 11,
+                  "endColumn": 31
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "свойство \"Name\", не допускающий значения NULL, должен содержать значение, отличное от NULL, при выходе из конструктора. Рассмотрите возможность добавления модификатора \"required\" или объявления значения свойство, допускающего значение NULL.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/111/Desktop/qqqq/APIWeb/ReservationService/BusinessLogic/DTOs/ResourceDTO/ResourceEditDTO.cs",
+                "region": {
+                  "startLine": 6,
+                  "startColumn": 23,
+                  "endLine": 6,
+                  "endColumn": 27
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/111/Desktop/qqqq/APIWeb/ReservationService/BusinessLogic/DTOs/ResourceDTO/ResourceEditDTO.cs",
+                "region": {
+                  "startLine": 6,
+                  "startColumn": 23,
+                  "endLine": 6,
+                  "endColumn": 27
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "свойство \"Description\", не допускающий значения NULL, должен содержать значение, отличное от NULL, при выходе из конструктора. Рассмотрите возможность добавления модификатора \"required\" или объявления значения свойство, допускающего значение NULL.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/111/Desktop/qqqq/APIWeb/ReservationService/BusinessLogic/DTOs/ResourceDTO/ResourceEditDTO.cs",
+                "region": {
+                  "startLine": 7,
+                  "startColumn": 23,
+                  "endLine": 7,
+                  "endColumn": 34
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/111/Desktop/qqqq/APIWeb/ReservationService/BusinessLogic/DTOs/ResourceDTO/ResourceEditDTO.cs",
+                "region": {
+                  "startLine": 7,
+                  "startColumn": 23,
+                  "endLine": 7,
+                  "endColumn": 34
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "свойство \"ImageUrl\", не допускающий значения NULL, должен содержать значение, отличное от NULL, при выходе из конструктора. Рассмотрите возможность добавления модификатора \"required\" или объявления значения свойство, допускающего значение NULL.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/111/Desktop/qqqq/APIWeb/ReservationService/BusinessLogic/DTOs/ResourceDTO/ResourceEditDTO.cs",
+                "region": {
+                  "startLine": 9,
+                  "startColumn": 23,
+                  "endLine": 9,
+                  "endColumn": 31
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/111/Desktop/qqqq/APIWeb/ReservationService/BusinessLogic/DTOs/ResourceDTO/ResourceEditDTO.cs",
+                "region": {
+                  "startLine": 9,
+                  "startColumn": 23,
+                  "endLine": 9,
+                  "endColumn": 31
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "свойство \"Name\", не допускающий значения NULL, должен содержать значение, отличное от NULL, при выходе из конструктора. Рассмотрите возможность добавления модификатора \"required\" или объявления значения свойство, допускающего значение NULL.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/111/Desktop/qqqq/APIWeb/ReservationService/BusinessLogic/DTOs/CategoryDTO/CategoryGetDTO.cs",
+                "region": {
+                  "startLine": 8,
+                  "startColumn": 23,
+                  "endLine": 8,
+                  "endColumn": 27
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/111/Desktop/qqqq/APIWeb/ReservationService/BusinessLogic/DTOs/CategoryDTO/CategoryGetDTO.cs",
+                "region": {
+                  "startLine": 8,
+                  "startColumn": 23,
+                  "endLine": 8,
+                  "endColumn": 27
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "свойство \"Name\", не допускающий значения NULL, должен содержать значение, отличное от NULL, при выходе из конструктора. Рассмотрите возможность добавления модификатора \"required\" или объявления значения свойство, допускающего значение NULL.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/111/Desktop/qqqq/APIWeb/ReservationService/BusinessLogic/DTOs/ResourceDTO/ResourceCreateDTO.cs",
+                "region": {
+                  "startLine": 5,
+                  "startColumn": 23,
+                  "endLine": 5,
+                  "endColumn": 27
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/111/Desktop/qqqq/APIWeb/ReservationService/BusinessLogic/DTOs/ResourceDTO/ResourceCreateDTO.cs",
+                "region": {
+                  "startLine": 5,
+                  "startColumn": 23,
+                  "endLine": 5,
+                  "endColumn": 27
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "свойство \"Description\", не допускающий значения NULL, должен содержать значение, отличное от NULL, при выходе из конструктора. Рассмотрите возможность добавления модификатора \"required\" или объявления значения свойство, допускающего значение NULL.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/111/Desktop/qqqq/APIWeb/ReservationService/BusinessLogic/DTOs/ResourceDTO/ResourceCreateDTO.cs",
+                "region": {
+                  "startLine": 6,
+                  "startColumn": 23,
+                  "endLine": 6,
+                  "endColumn": 34
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/111/Desktop/qqqq/APIWeb/ReservationService/BusinessLogic/DTOs/ResourceDTO/ResourceCreateDTO.cs",
+                "region": {
+                  "startLine": 6,
+                  "startColumn": 23,
+                  "endLine": 6,
+                  "endColumn": 34
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "свойство \"ImageUrl\", не допускающий значения NULL, должен содержать значение, отличное от NULL, при выходе из конструктора. Рассмотрите возможность добавления модификатора \"required\" или объявления значения свойство, допускающего значение NULL.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/111/Desktop/qqqq/APIWeb/ReservationService/BusinessLogic/DTOs/ResourceDTO/ResourceCreateDTO.cs",
+                "region": {
+                  "startLine": 8,
+                  "startColumn": 23,
+                  "endLine": 8,
+                  "endColumn": 31
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/111/Desktop/qqqq/APIWeb/ReservationService/BusinessLogic/DTOs/ResourceDTO/ResourceCreateDTO.cs",
+                "region": {
+                  "startLine": 8,
+                  "startColumn": 23,
+                  "endLine": 8,
+                  "endColumn": 31
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "свойство \"Name\", не допускающий значения NULL, должен содержать значение, отличное от NULL, при выходе из конструктора. Рассмотрите возможность добавления модификатора \"required\" или объявления значения свойство, допускающего значение NULL.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/111/Desktop/qqqq/APIWeb/ReservationService/BusinessLogic/DTOs/CategoryDTO/CategoruCreateDTO.cs",
+                "region": {
+                  "startLine": 7,
+                  "startColumn": 23,
+                  "endLine": 7,
+                  "endColumn": 27
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/111/Desktop/qqqq/APIWeb/ReservationService/BusinessLogic/DTOs/CategoryDTO/CategoruCreateDTO.cs",
+                "region": {
+                  "startLine": 7,
+                  "startColumn": 23,
+                  "endLine": 7,
+                  "endColumn": 27
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "свойство \"Key\", не допускающий значения NULL, должен содержать значение, отличное от NULL, при выходе из конструктора. Рассмотрите возможность добавления модификатора \"required\" или объявления значения свойство, допускающего значение NULL.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/111/Desktop/qqqq/APIWeb/ReservationService/BusinessLogic/DTOs/JwtOptions.cs",
+                "region": {
+                  "startLine": 5,
+                  "startColumn": 23,
+                  "endLine": 5,
+                  "endColumn": 26
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/111/Desktop/qqqq/APIWeb/ReservationService/BusinessLogic/DTOs/JwtOptions.cs",
+                "region": {
+                  "startLine": 5,
+                  "startColumn": 23,
+                  "endLine": 5,
+                  "endColumn": 26
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "свойство \"Issuer\", не допускающий значения NULL, должен содержать значение, отличное от NULL, при выходе из конструктора. Рассмотрите возможность добавления модификатора \"required\" или объявления значения свойство, допускающего значение NULL.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/111/Desktop/qqqq/APIWeb/ReservationService/BusinessLogic/DTOs/JwtOptions.cs",
+                "region": {
+                  "startLine": 11,
+                  "startColumn": 23,
+                  "endLine": 11,
+                  "endColumn": 29
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/111/Desktop/qqqq/APIWeb/ReservationService/BusinessLogic/DTOs/JwtOptions.cs",
+                "region": {
+                  "startLine": 11,
+                  "startColumn": 23,
+                  "endLine": 11,
+                  "endColumn": 29
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "SYSLIB0051",
+          "level": "warning",
+          "message": "\"Exception.Exception(SerializationInfo, StreamingContext)\" является устаревшим: 'This API supports obsolete formatter-based serialization. It should not be called or extended by application code.'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/111/Desktop/qqqq/APIWeb/ReservationService/BusinessLogic/HttpException.cs",
+                "region": {
+                  "startLine": 20,
+                  "startColumn": 66,
+                  "endLine": 20,
+                  "endColumn": 87
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 2
+          }
+        },
+        {
+          "ruleId": "CS8603",
+          "level": "warning",
+          "message": "Возможно, возврат ссылки, допускающей значение NULL.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/111/Desktop/qqqq/APIWeb/ReservationService/BusinessLogic/Services/CategoryService.cs",
+                "region": {
+                  "startLine": 23,
+                  "startColumn": 24,
+                  "endLine": 23,
+                  "endColumn": 28
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS0436",
+          "level": "warning",
+          "message": "Тип \"PagedList<T>\" в \"C:\\Users\\111\\Desktop\\qqqq\\APIWeb\\ReservationService\\BusinessLogic\\Helpers\\PaginatedList.cs\" конфликтует с импортированным типом \"PagedList<T>\" в \"DataAccess, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null\". Используется тип, определенный в \"C:\\Users\\111\\Desktop\\qqqq\\APIWeb\\ReservationService\\BusinessLogic\\Helpers\\PaginatedList.cs\".",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/111/Desktop/qqqq/APIWeb/ReservationService/BusinessLogic/Helpers/PaginatedList.cs",
+                "region": {
+                  "startLine": 28,
+                  "startColumn": 24,
+                  "endLine": 28,
+                  "endColumn": 36
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 2
+          }
+        },
+        {
+          "ruleId": "CS8603",
+          "level": "warning",
+          "message": "Возможно, возврат ссылки, допускающей значение NULL.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/111/Desktop/qqqq/APIWeb/ReservationService/BusinessLogic/Services/CategoryService.cs",
+                "region": {
+                  "startLine": 53,
+                  "startColumn": 24,
+                  "endLine": 53,
+                  "endColumn": 28
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8603",
+          "level": "warning",
+          "message": "Возможно, возврат ссылки, допускающей значение NULL.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/111/Desktop/qqqq/APIWeb/ReservationService/BusinessLogic/Services/CategoryService.cs",
+                "region": {
+                  "startLine": 57,
+                  "startColumn": 24,
+                  "endLine": 57,
+                  "endColumn": 28
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS0472",
+          "level": "warning",
+          "message": "Результат выражения всегда равен \"false\", поскольку значение типа \"CategorySlug\" никогда не равно Null типа \"CategorySlug?\"",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/111/Desktop/qqqq/APIWeb/ReservationService/BusinessLogic/Services/ResourcesService.cs",
+                "region": {
+                  "startLine": 36,
+                  "startColumn": 17,
+                  "endLine": 36,
+                  "endColumn": 33
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 2
+          }
+        },
+        {
+          "ruleId": "CS0436",
+          "level": "warning",
+          "message": "Тип \"PagedList<T>\" в \"C:\\Users\\111\\Desktop\\qqqq\\APIWeb\\ReservationService\\BusinessLogic\\Helpers\\PaginatedList.cs\" конфликтует с импортированным типом \"PagedList<T>\" в \"DataAccess, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null\". Используется тип, определенный в \"C:\\Users\\111\\Desktop\\qqqq\\APIWeb\\ReservationService\\BusinessLogic\\Helpers\\PaginatedList.cs\".",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/111/Desktop/qqqq/APIWeb/ReservationService/BusinessLogic/Services/CategoryService.cs",
+                "region": {
+                  "startLine": 93,
+                  "startColumn": 31,
+                  "endLine": 93,
+                  "endColumn": 50
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 2
+          }
+        },
+        {
+          "ruleId": "CS8602",
+          "level": "warning",
+          "message": "Разыменование вероятной пустой ссылки.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/111/Desktop/qqqq/APIWeb/ReservationService/BusinessLogic/Services/ResourcesService.cs",
+                "region": {
+                  "startLine": 111,
+                  "startColumn": 46,
+                  "endLine": 111,
+                  "endColumn": 59
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S125",
+          "level": "warning",
+          "message": "Remove this commented out code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/111/Desktop/qqqq/APIWeb/ReservationService/BusinessLogic/Helpers/PaginatedList.cs",
+                "region": {
+                  "startLine": 15,
+                  "startColumn": 9,
+                  "endLine": 15,
+                  "endColumn": 85
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S125",
+          "level": "warning",
+          "message": "Remove this commented out code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/111/Desktop/qqqq/APIWeb/ReservationService/BusinessLogic/Interfaces/IJwtService.cs",
+                "region": {
+                  "startLine": 14,
+                  "startColumn": 9,
+                  "endLine": 14,
+                  "endColumn": 70
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S125",
+          "level": "warning",
+          "message": "Remove this commented out code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/111/Desktop/qqqq/APIWeb/ReservationService/BusinessLogic/Services/ResourcesService.cs",
+                "region": {
+                  "startLine": 41,
+                  "startColumn": 13,
+                  "endLine": 41,
+                  "endColumn": 52
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S125",
+          "level": "warning",
+          "message": "Remove this commented out code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/111/Desktop/qqqq/APIWeb/ReservationService/BusinessLogic/Services/ResourcesService.cs",
+                "region": {
+                  "startLine": 53,
+                  "startColumn": 13,
+                  "endLine": 53,
+                  "endColumn": 49
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S125",
+          "level": "warning",
+          "message": "Remove this commented out code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/111/Desktop/qqqq/APIWeb/ReservationService/BusinessLogic/Services/ResourcesService.cs",
+                "region": {
+                  "startLine": 56,
+                  "startColumn": 13,
+                  "endLine": 56,
+                  "endColumn": 42
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S125",
+          "level": "warning",
+          "message": "Remove this commented out code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/111/Desktop/qqqq/APIWeb/ReservationService/BusinessLogic/Services/ResourcesService.cs",
+                "region": {
+                  "startLine": 64,
+                  "startColumn": 13,
+                  "endLine": 64,
+                  "endColumn": 56
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S101",
+          "level": "warning",
+          "message": "Rename class 'CategoryCreateDTO' to match pascal case naming rules, consider using 'CategoryCreateDto'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/111/Desktop/qqqq/APIWeb/ReservationService/BusinessLogic/DTOs/CategoryDTO/CategoruCreateDTO.cs",
+                "region": {
+                  "startLine": 5,
+                  "startColumn": 18,
+                  "endLine": 5,
+                  "endColumn": 35
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S101",
+          "level": "warning",
+          "message": "Rename class 'CategoryDTO' to match pascal case naming rules, consider using 'CategoryDto'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/111/Desktop/qqqq/APIWeb/ReservationService/BusinessLogic/DTOs/CategoryDTO/CategoryGetDTO.cs",
+                "region": {
+                  "startLine": 5,
+                  "startColumn": 18,
+                  "endLine": 5,
+                  "endColumn": 29
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S125",
+          "level": "warning",
+          "message": "Remove this commented out code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/111/Desktop/qqqq/APIWeb/ReservationService/BusinessLogic/Services/UserServices.cs",
+                "region": {
+                  "startLine": 67,
+                  "startColumn": 13,
+                  "endLine": 67,
+                  "endColumn": 91
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S125",
+          "level": "warning",
+          "message": "Remove this commented out code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/111/Desktop/qqqq/APIWeb/ReservationService/BusinessLogic/Validators/ResourceDTOValidator.cs",
+                "region": {
+                  "startLine": 24,
+                  "startColumn": 13,
+                  "endLine": 24,
+                  "endColumn": 66
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S101",
+          "level": "warning",
+          "message": "Rename class 'ResourceCreateDTO' to match pascal case naming rules, consider using 'ResourceCreateDto'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/111/Desktop/qqqq/APIWeb/ReservationService/BusinessLogic/DTOs/ResourceDTO/ResourceCreateDTO.cs",
+                "region": {
+                  "startLine": 3,
+                  "startColumn": 18,
+                  "endLine": 3,
+                  "endColumn": 35
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S101",
+          "level": "warning",
+          "message": "Rename class 'ResourceEditDTO' to match pascal case naming rules, consider using 'ResourceEditDto'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/111/Desktop/qqqq/APIWeb/ReservationService/BusinessLogic/DTOs/ResourceDTO/ResourceEditDTO.cs",
+                "region": {
+                  "startLine": 3,
+                  "startColumn": 18,
+                  "endLine": 3,
+                  "endColumn": 33
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S101",
+          "level": "warning",
+          "message": "Rename class 'ResourceGetDTO' to match pascal case naming rules, consider using 'ResourceGetDto'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/111/Desktop/qqqq/APIWeb/ReservationService/BusinessLogic/DTOs/ResourceDTO/ResourceGetDTO.cs",
+                "region": {
+                  "startLine": 5,
+                  "startColumn": 18,
+                  "endLine": 5,
+                  "endColumn": 32
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2094",
+          "level": "warning",
+          "message": "Remove this empty class, write its code or make it an \"interface\".",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/111/Desktop/qqqq/APIWeb/ReservationService/BusinessLogic/DTOs/Users/LogoutModel.cs",
+                "region": {
+                  "startLine": 3,
+                  "startColumn": 18,
+                  "endLine": 3,
+                  "endColumn": 29
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S101",
+          "level": "warning",
+          "message": "Rename class 'CategoryDTOValidator' to match pascal case naming rules, consider using 'CategoryDtoValidator'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/111/Desktop/qqqq/APIWeb/ReservationService/BusinessLogic/Validators/CategoryDTOValidator.cs",
+                "region": {
+                  "startLine": 6,
+                  "startColumn": 18,
+                  "endLine": 6,
+                  "endColumn": 38
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S101",
+          "level": "warning",
+          "message": "Rename class 'ResourceDTOValidator' to match pascal case naming rules, consider using 'ResourceDtoValidator'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/111/Desktop/qqqq/APIWeb/ReservationService/BusinessLogic/Validators/ResourceDTOValidator.cs",
+                "region": {
+                  "startLine": 6,
+                  "startColumn": 18,
+                  "endLine": 6,
+                  "endColumn": 38
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S4487",
+          "level": "warning",
+          "message": "Remove this unread private field 'configuration' or refactor the code to use its value.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/111/Desktop/qqqq/APIWeb/ReservationService/BusinessLogic/Services/JwtService.cs",
+                "region": {
+                  "startLine": 16,
+                  "startColumn": 41,
+                  "endLine": 16,
+                  "endColumn": 54
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S927",
+          "level": "warning",
+          "message": "Rename parameter 'category' to 'model' to match the interface declaration.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/111/Desktop/qqqq/APIWeb/ReservationService/BusinessLogic/Services/CategoryService.cs",
+                "region": {
+                  "startLine": 20,
+                  "startColumn": 65,
+                  "endLine": 20,
+                  "endColumn": 73
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S6966",
+          "level": "warning",
+          "message": "Await FindAsync instead.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/111/Desktop/qqqq/APIWeb/ReservationService/BusinessLogic/Services/CategoryService.cs",
+                "region": {
+                  "startLine": 36,
+                  "startColumn": 26,
+                  "endLine": 36,
+                  "endColumn": 49
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S927",
+          "level": "warning",
+          "message": "Rename parameter 'category' to 'model' to match the interface declaration.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/111/Desktop/qqqq/APIWeb/ReservationService/BusinessLogic/Services/CategoryService.cs",
+                "region": {
+                  "startLine": 50,
+                  "startColumn": 57,
+                  "endLine": 50,
+                  "endColumn": 65
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S112",
+          "level": "warning",
+          "message": "'System.Exception' should not be thrown by user code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/111/Desktop/qqqq/APIWeb/ReservationService/BusinessLogic/Services/ResourcesService.cs",
+                "region": {
+                  "startLine": 37,
+                  "startColumn": 23,
+                  "endLine": 37,
+                  "endColumn": 62
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2583",
+          "level": "warning",
+          "message": "Change this condition so that it does not always evaluate to 'False'. Some code paths are unreachable.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/111/Desktop/qqqq/APIWeb/ReservationService/BusinessLogic/Services/ResourcesService.cs",
+                "region": {
+                  "startLine": 36,
+                  "startColumn": 17,
+                  "endLine": 36,
+                  "endColumn": 33
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/111/Desktop/qqqq/APIWeb/ReservationService/BusinessLogic/Services/ResourcesService.cs",
+                "region": {
+                  "startLine": 37,
+                  "startColumn": 23,
+                  "endLine": 37,
+                  "endColumn": 62
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "0": null
+            }
+          }
+        },
+        {
+          "ruleId": "S1006",
+          "level": "warning",
+          "message": "Remove the default parameter value to match the signature of overridden method.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/111/Desktop/qqqq/APIWeb/ReservationService/BusinessLogic/Services/CategoryService.cs",
+                "region": {
+                  "startLine": 80,
+                  "startColumn": 112,
+                  "endLine": 80,
+                  "endColumn": 115
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA1862",
+          "level": "note",
+          "message": "Рекомендуется использовать перегрузку метода сравнения строк \"string.Contains(string)\", которая использует значение перечисления \"StringComparison\", но помните, что при этом поведение может немного измениться, поэтому проведите тщательное тестирование после применения этой рекомендации. Если же сравнение с учетом культуры не требуется, попробуйте использовать \"StringComparison.OrdinalIgnoreCase\".",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/111/Desktop/qqqq/APIWeb/ReservationService/BusinessLogic/Services/CategoryService.cs",
+                "region": {
+                  "startLine": 88,
+                  "startColumn": 42,
+                  "endLine": 88,
+                  "endColumn": 85
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "LeftOffendingMethod": "ToLower",
+              "RightOffendingMethod": "ToLower"
+            }
+          }
+        },
+        {
+          "ruleId": "S1006",
+          "level": "warning",
+          "message": "Remove the default parameter value to match the signature of overridden method.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/111/Desktop/qqqq/APIWeb/ReservationService/BusinessLogic/Services/ResourcesService.cs",
+                "region": {
+                  "startLine": 97,
+                  "startColumn": 28,
+                  "endLine": 97,
+                  "endColumn": 31
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1075",
+          "level": "warning",
+          "message": "Refactor your code not to use hardcoded absolute paths or URIs.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/111/Desktop/qqqq/APIWeb/ReservationService/BusinessLogic/Services/ResourcesService.cs",
+                "region": {
+                  "startLine": 151,
+                  "startColumn": 24,
+                  "endLine": 151,
+                  "endColumn": 63
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1075",
+          "level": "warning",
+          "message": "Refactor your code not to use hardcoded absolute paths or URIs.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/111/Desktop/qqqq/APIWeb/ReservationService/BusinessLogic/Services/ResourcesService.cs",
+                "region": {
+                  "startLine": 163,
+                  "startColumn": 24,
+                  "endLine": 163,
+                  "endColumn": 63
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1075",
+          "level": "warning",
+          "message": "Refactor your code not to use hardcoded absolute paths or URIs.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/111/Desktop/qqqq/APIWeb/ReservationService/BusinessLogic/Services/ResourcesService.cs",
+                "region": {
+                  "startLine": 175,
+                  "startColumn": 24,
+                  "endLine": 175,
+                  "endColumn": 62
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1075",
+          "level": "warning",
+          "message": "Refactor your code not to use hardcoded absolute paths or URIs.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/111/Desktop/qqqq/APIWeb/ReservationService/BusinessLogic/Services/ResourcesService.cs",
+                "region": {
+                  "startLine": 187,
+                  "startColumn": 24,
+                  "endLine": 187,
+                  "endColumn": 68
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1075",
+          "level": "warning",
+          "message": "Refactor your code not to use hardcoded absolute paths or URIs.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/111/Desktop/qqqq/APIWeb/ReservationService/BusinessLogic/Services/ResourcesService.cs",
+                "region": {
+                  "startLine": 199,
+                  "startColumn": 24,
+                  "endLine": 199,
+                  "endColumn": 63
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1075",
+          "level": "warning",
+          "message": "Refactor your code not to use hardcoded absolute paths or URIs.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/111/Desktop/qqqq/APIWeb/ReservationService/BusinessLogic/Services/ResourcesService.cs",
+                "region": {
+                  "startLine": 211,
+                  "startColumn": 24,
+                  "endLine": 211,
+                  "endColumn": 64
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1075",
+          "level": "warning",
+          "message": "Refactor your code not to use hardcoded absolute paths or URIs.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/111/Desktop/qqqq/APIWeb/ReservationService/BusinessLogic/Services/ResourcesService.cs",
+                "region": {
+                  "startLine": 223,
+                  "startColumn": 24,
+                  "endLine": 223,
+                  "endColumn": 64
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1075",
+          "level": "warning",
+          "message": "Refactor your code not to use hardcoded absolute paths or URIs.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/111/Desktop/qqqq/APIWeb/ReservationService/BusinessLogic/Services/ResourcesService.cs",
+                "region": {
+                  "startLine": 235,
+                  "startColumn": 24,
+                  "endLine": 235,
+                  "endColumn": 63
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1075",
+          "level": "warning",
+          "message": "Refactor your code not to use hardcoded absolute paths or URIs.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/111/Desktop/qqqq/APIWeb/ReservationService/BusinessLogic/Services/ResourcesService.cs",
+                "region": {
+                  "startLine": 247,
+                  "startColumn": 24,
+                  "endLine": 247,
+                  "endColumn": 65
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1075",
+          "level": "warning",
+          "message": "Refactor your code not to use hardcoded absolute paths or URIs.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/111/Desktop/qqqq/APIWeb/ReservationService/BusinessLogic/Services/ResourcesService.cs",
+                "region": {
+                  "startLine": 259,
+                  "startColumn": 24,
+                  "endLine": 259,
+                  "endColumn": 64
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA1862",
+          "level": "note",
+          "message": "Рекомендуется использовать перегрузку метода сравнения строк \"string.Contains(string)\", которая использует значение перечисления \"StringComparison\", но помните, что при этом поведение может немного измениться, поэтому проведите тщательное тестирование после применения этой рекомендации. Если же сравнение с учетом культуры не требуется, попробуйте использовать \"StringComparison.OrdinalIgnoreCase\".",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/111/Desktop/qqqq/APIWeb/ReservationService/BusinessLogic/Services/ResourcesService.cs",
+                "region": {
+                  "startLine": 108,
+                  "startColumn": 46,
+                  "endLine": 108,
+                  "endColumn": 89
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "LeftOffendingMethod": "ToLower",
+              "RightOffendingMethod": "ToLower"
+            }
+          }
+        },
+        {
+          "ruleId": "CA1862",
+          "level": "note",
+          "message": "Рекомендуется использовать перегрузку метода сравнения строк \"string.Contains(string)\", которая использует значение перечисления \"StringComparison\", но помните, что при этом поведение может немного измениться, поэтому проведите тщательное тестирование после применения этой рекомендации. Если же сравнение с учетом культуры не требуется, попробуйте использовать \"StringComparison.OrdinalIgnoreCase\".",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/111/Desktop/qqqq/APIWeb/ReservationService/BusinessLogic/Services/ResourcesService.cs",
+                "region": {
+                  "startLine": 111,
+                  "startColumn": 46,
+                  "endLine": 111,
+                  "endColumn": 103
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "LeftOffendingMethod": "ToLower",
+              "RightOffendingMethod": "ToLower"
+            }
+          }
+        }
+      ],
+      "rules": {
+        "CA1862": {
+          "id": "CA1862",
+          "shortDescription": "Используйте перегрузки метода \"StringComparison\" для сравнения строк без учета регистра",
+          "fullDescription": "Не вызывайте \"ToLower\", \"ToUpper\", \"ToLowerInvariant\" и \"ToUpperInvariant\" для сравнения строк без учета регистра, поскольку это приведет к выделению. Вместо этого лучше вызывать перегрузки методов \"Contains\", \"IndexOf\" и \"StartsWith\", которые используют значение перечисления \"StringComparison\" для сравнения без учета регистра. При переходе на использование перегрузки, которая использует \"StringComparison\", поведение может немного измениться, поэтому проведите тщательное тестирование после применения этой рекомендации. Кроме того, если сравнение с учетом культуры не требуется, попробуйте использовать \"StringComparison.OrdinalIgnoreCase\".",
+          "defaultLevel": "note",
+          "helpUri": "https://learn.microsoft.com/dotnet/fundamentals/code-analysis/quality-rules/ca1862",
+          "properties": {
+            "category": "Performance",
+            "isEnabledByDefault": true,
+            "tags": [
+              "Telemetry",
+              "EnabledRuleInAggressiveMode"
+            ]
+          }
+        },
+        "CS0436": {
+          "id": "CS0436",
+          "shortDescription": "Тип конфликтует с импортированным типом",
+          "defaultLevel": "warning",
+          "helpUri": "https://msdn.microsoft.com/query/roslyn.query?appId=roslyn&k=k(CS0436)",
+          "properties": {
+            "category": "Compiler",
+            "isEnabledByDefault": true,
+            "tags": [
+              "Compiler",
+              "Telemetry"
+            ]
+          }
+        },
+        "CS0472": {
+          "id": "CS0472",
+          "shortDescription": "Результат значения всегда одинаковый, так как значение этого типа никогда не равно NULL",
+          "defaultLevel": "warning",
+          "helpUri": "https://msdn.microsoft.com/query/roslyn.query?appId=roslyn&k=k(CS0472)",
+          "properties": {
+            "category": "Compiler",
+            "isEnabledByDefault": true,
+            "tags": [
+              "Compiler",
+              "Telemetry"
+            ]
+          }
+        },
+        "CS8602": {
+          "id": "CS8602",
+          "shortDescription": "Разыменование вероятной пустой ссылки.",
+          "defaultLevel": "warning",
+          "helpUri": "https://msdn.microsoft.com/query/roslyn.query?appId=roslyn&k=k(CS8602)",
+          "properties": {
+            "category": "Compiler",
+            "isEnabledByDefault": true,
+            "tags": [
+              "Compiler",
+              "Telemetry"
+            ]
+          }
+        },
+        "CS8603": {
+          "id": "CS8603",
+          "shortDescription": "Возможно, возврат ссылки, допускающей значение NULL.",
+          "defaultLevel": "warning",
+          "helpUri": "https://msdn.microsoft.com/query/roslyn.query?appId=roslyn&k=k(CS8603)",
+          "properties": {
+            "category": "Compiler",
+            "isEnabledByDefault": true,
+            "tags": [
+              "Compiler",
+              "Telemetry"
+            ]
+          }
+        },
+        "CS8618": {
+          "id": "CS8618",
+          "shortDescription": "Поле, не допускающее значения NULL, должно содержать значение, отличное от NULL, при выходе из конструктора. Рассмотрите возможность добавления модификатора \"required\" или объявления значения, допускающего значение NULL.",
+          "defaultLevel": "warning",
+          "helpUri": "https://msdn.microsoft.com/query/roslyn.query?appId=roslyn&k=k(CS8618)",
+          "properties": {
+            "category": "Compiler",
+            "isEnabledByDefault": true,
+            "tags": [
+              "Compiler",
+              "Telemetry"
+            ]
+          }
+        },
+        "S1006": {
+          "id": "S1006",
+          "shortDescription": "Method overrides should not change parameter defaults",
+          "fullDescription": "Default arguments are determined by the static type of the object.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-1006",
+          "properties": {
+            "category": "Critical Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "TestSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S101": {
+          "id": "S101",
+          "shortDescription": "Types should be named in PascalCase",
+          "fullDescription": "Shared naming conventions allow teams to collaborate efficiently.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-101",
+          "properties": {
+            "category": "Minor Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "TestSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S1075": {
+          "id": "S1075",
+          "shortDescription": "URIs should not be hardcoded",
+          "fullDescription": "Hard-coding a URI makes it difficult to test a program for a variety of reasons:",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-1075",
+          "properties": {
+            "category": "Minor Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S112": {
+          "id": "S112",
+          "shortDescription": "General or reserved exceptions should never be thrown",
+          "fullDescription": "This rule raises an issue when a general or reserved exception is thrown.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-112",
+          "properties": {
+            "category": "Major Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S125": {
+          "id": "S125",
+          "shortDescription": "Sections of code should not be commented out",
+          "fullDescription": "Commented-out code distracts the focus from the actual executed code. It creates a noise that increases maintenance code. And because it is never executed, it quickly becomes out of date and invalid.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-125",
+          "properties": {
+            "category": "Major Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "TestSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S2094": {
+          "id": "S2094",
+          "shortDescription": "Classes should not be empty",
+          "fullDescription": "There is no good excuse for an empty class. If it’s being used simply as a common extension point, it should be replaced with an interface. If it was stubbed in as a placeholder for future development it should be fleshed-out. In any other case, it should be eliminated.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-2094",
+          "properties": {
+            "category": "Minor Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "TestSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S2583": {
+          "id": "S2583",
+          "shortDescription": "Conditionally executed code should be reachable",
+          "fullDescription": "Conditional expressions which are always true or false can lead to unreachable code.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-2583",
+          "properties": {
+            "category": "Major Bug",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "TestSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S4487": {
+          "id": "S4487",
+          "shortDescription": "Unread \"private\" fields should be removed",
+          "fullDescription": "Private fields which are written but never read are a case of \"dead store\". Changing the value of such a field is useless and most probably indicates an error in the code.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-4487",
+          "properties": {
+            "category": "Critical Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "TestSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S6966": {
+          "id": "S6966",
+          "shortDescription": "Awaitable method should be used",
+          "fullDescription": "In an async method, any blocking operations should be avoided.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-6966",
+          "properties": {
+            "category": "Major Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "TestSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S927": {
+          "id": "S927",
+          "shortDescription": "Parameter names should match base declaration and other partial definitions",
+          "fullDescription": "Parameters are part of the method signature and its identity.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-927",
+          "properties": {
+            "category": "Critical Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "TestSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "SYSLIB0051": {
+          "id": "SYSLIB0051",
+          "shortDescription": "Тип или член устарел",
+          "defaultLevel": "warning",
+          "helpUri": "https://aka.ms/dotnet-warnings/SYSLIB0051",
+          "properties": {
+            "category": "Compiler",
+            "isEnabledByDefault": true,
+            "tags": [
+              "Compiler",
+              "Telemetry",
+              "CustomObsolete"
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ProjectInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.sonarsource.com/msbuild/integration/2015/1">
+  <ProjectName>BusinessLogic</ProjectName>
+  <ProjectLanguage>C#</ProjectLanguage>
+  <ProjectType>Product</ProjectType>
+  <ProjectGuid>1e48056e-2882-43e6-8f74-7ffc726a5daf</ProjectGuid>
+  <FullPath>C:\Users\111\Desktop\qqqq\APIWeb\ReservationService\BusinessLogic\BusinessLogic.csproj</FullPath>
+  <IsExcluded>false</IsExcluded>
+  <AnalysisResultFiles>
+    <AnalysisResultFile Id="FilesToAnalyze" Location="C:\Users\111\Desktop\qqqq\APIWeb\.sonarqube\conf\1\FilesToAnalyze.txt" />
+  </AnalysisResultFiles>
+  <AnalysisSettings>
+    <Property Name="sonar.cs.roslyn.reportFilePaths">C:\Users\111\Desktop\qqqq\APIWeb\.sonarqube\out\1\Issues.json</Property>
+    <Property Name="sonar.cs.analyzer.projectOutPaths">C:\Users\111\Desktop\qqqq\APIWeb\.sonarqube\out\1</Property>
+    <Property Name="sonar.cs.scanner.telemetry">C:\Users\111\Desktop\qqqq\APIWeb\.sonarqube\out\1\Telemetry.json</Property>
+  </AnalysisSettings>
+  <Configuration>Debug</Configuration>
+  <Platform>AnyCPU</Platform>
+  <TargetFramework>net8.0</TargetFramework>
+</ProjectInfo>

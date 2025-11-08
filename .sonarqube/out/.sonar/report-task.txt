@@ -1,0 +1,7 @@
+organization=andry958
+projectKey=Andry958_APIWeb
+serverUrl=https://sonarcloud.io
+serverVersion=8.0.0.76401
+dashboardUrl=https://sonarcloud.io/dashboard?id=Andry958_APIWeb
+ceTaskId=AZpjBXJ_TfjArgp0CcHJ
+ceTaskUrl=https://sonarcloud.io/api/ce/task?id=AZpjBXJ_TfjArgp0CcHJ

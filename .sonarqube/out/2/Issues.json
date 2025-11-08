@@ -1,0 +1,417 @@
+{
+  "$schema": "http://json.schemastore.org/sarif-1.0.0",
+  "version": "1.0.0",
+  "runs": [
+    {
+      "tool": {
+        "name": "Компилятор Microsoft (R) Visual C#",
+        "version": "4.11.0.0",
+        "fileVersion": "4.11.0-3.24554.2 (bc1c3011)",
+        "semanticVersion": "4.11.0",
+        "language": "ru-RU"
+      },
+      "results": [
+        {
+          "ruleId": "CS0105",
+          "level": "warning",
+          "message": "Директива using для \"DataAccess.Repositories\" ранее встречалась в этом пространстве имен",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/111/Desktop/qqqq/APIWeb/ReservationService/Shop_Api_PV421/Program.cs",
+                "region": {
+                  "startLine": 17,
+                  "startColumn": 7,
+                  "endLine": 17,
+                  "endColumn": 30
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 3
+          }
+        },
+        {
+          "ruleId": "S125",
+          "level": "warning",
+          "message": "Remove this commented out code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/111/Desktop/qqqq/APIWeb/ReservationService/Shop_Api_PV421/Controllers/ProductsController.cs",
+                "region": {
+                  "startLine": 9,
+                  "startColumn": 9,
+                  "endLine": 9,
+                  "endColumn": 46
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S4487",
+          "level": "warning",
+          "message": "Remove this unread private field 'ctx' or refactor the code to use its value.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/111/Desktop/qqqq/APIWeb/ReservationService/Shop_Api_PV421/Controllers/MainController.cs",
+                "region": {
+                  "startLine": 17,
+                  "startColumn": 54,
+                  "endLine": 17,
+                  "endColumn": 57
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S3168",
+          "level": "warning",
+          "message": "Return 'Task' instead.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/111/Desktop/qqqq/APIWeb/ReservationService/Shop_Api_PV421/ErrorHandlerMiddleware.cs",
+                "region": {
+                  "startLine": 33,
+                  "startColumn": 23,
+                  "endLine": 33,
+                  "endColumn": 27
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA1822",
+          "level": "note",
+          "message": "Член \"SendResponse\" не обращается к данным экземпляров, поэтому его можно пометить как статический.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/111/Desktop/qqqq/APIWeb/ReservationService/Shop_Api_PV421/ErrorHandlerMiddleware.cs",
+                "region": {
+                  "startLine": 33,
+                  "startColumn": 28,
+                  "endLine": 33,
+                  "endColumn": 40
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S6934",
+          "level": "warning",
+          "message": "Specify the RouteAttribute when an HttpMethodAttribute or RouteAttribute is specified at an action level.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/111/Desktop/qqqq/APIWeb/ReservationService/Shop_Api_PV421/Controllers/UserController.cs",
+                "region": {
+                  "startLine": 7,
+                  "startColumn": 18,
+                  "endLine": 7,
+                  "endColumn": 32
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/111/Desktop/qqqq/APIWeb/ReservationService/Shop_Api_PV421/Controllers/UserController.cs",
+                "region": {
+                  "startLine": 56,
+                  "startColumn": 42,
+                  "endLine": 56,
+                  "endColumn": 49
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/111/Desktop/qqqq/APIWeb/ReservationService/Shop_Api_PV421/Controllers/UserController.cs",
+                "region": {
+                  "startLine": 61,
+                  "startColumn": 42,
+                  "endLine": 61,
+                  "endColumn": 48
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/111/Desktop/qqqq/APIWeb/ReservationService/Shop_Api_PV421/Controllers/UserController.cs",
+                "region": {
+                  "startLine": 50,
+                  "startColumn": 42,
+                  "endLine": 50,
+                  "endColumn": 55
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/111/Desktop/qqqq/APIWeb/ReservationService/Shop_Api_PV421/Controllers/UserController.cs",
+                "region": {
+                  "startLine": 44,
+                  "startColumn": 42,
+                  "endLine": 44,
+                  "endColumn": 56
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/111/Desktop/qqqq/APIWeb/ReservationService/Shop_Api_PV421/Controllers/UserController.cs",
+                "region": {
+                  "startLine": 38,
+                  "startColumn": 42,
+                  "endLine": 38,
+                  "endColumn": 48
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/111/Desktop/qqqq/APIWeb/ReservationService/Shop_Api_PV421/Controllers/UserController.cs",
+                "region": {
+                  "startLine": 32,
+                  "startColumn": 42,
+                  "endLine": 32,
+                  "endColumn": 47
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/111/Desktop/qqqq/APIWeb/ReservationService/Shop_Api_PV421/Controllers/UserController.cs",
+                "region": {
+                  "startLine": 26,
+                  "startColumn": 42,
+                  "endLine": 26,
+                  "endColumn": 48
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/111/Desktop/qqqq/APIWeb/ReservationService/Shop_Api_PV421/Controllers/UserController.cs",
+                "region": {
+                  "startLine": 20,
+                  "startColumn": 42,
+                  "endLine": 20,
+                  "endColumn": 50
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "0": "By specifying an HttpMethodAttribute or RouteAttribute here, you will need to specify the RouteAttribute at the class level.",
+              "1": "By specifying an HttpMethodAttribute or RouteAttribute here, you will need to specify the RouteAttribute at the class level.",
+              "2": "By specifying an HttpMethodAttribute or RouteAttribute here, you will need to specify the RouteAttribute at the class level.",
+              "3": "By specifying an HttpMethodAttribute or RouteAttribute here, you will need to specify the RouteAttribute at the class level.",
+              "4": "By specifying an HttpMethodAttribute or RouteAttribute here, you will need to specify the RouteAttribute at the class level.",
+              "5": "By specifying an HttpMethodAttribute or RouteAttribute here, you will need to specify the RouteAttribute at the class level.",
+              "6": "By specifying an HttpMethodAttribute or RouteAttribute here, you will need to specify the RouteAttribute at the class level.",
+              "7": "By specifying an HttpMethodAttribute or RouteAttribute here, you will need to specify the RouteAttribute at the class level."
+            }
+          }
+        },
+        {
+          "ruleId": "S112",
+          "level": "warning",
+          "message": "'System.Exception' should not be thrown by user code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/111/Desktop/qqqq/APIWeb/ReservationService/Shop_Api_PV421/Program.cs",
+                "region": {
+                  "startLine": 23,
+                  "startColumn": 14,
+                  "endLine": 23,
+                  "endColumn": 58
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S6966",
+          "level": "warning",
+          "message": "Await RunAsync instead.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/111/Desktop/qqqq/APIWeb/ReservationService/Shop_Api_PV421/Program.cs",
+                "region": {
+                  "startLine": 115,
+                  "startColumn": 1,
+                  "endLine": 115,
+                  "endColumn": 10
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        }
+      ],
+      "rules": {
+        "CA1822": {
+          "id": "CA1822",
+          "shortDescription": "Пометьте члены как статические",
+          "fullDescription": "Члены, которые не обращаются к данным экземпляров и не вызывают методы экземпляров, можно пометить как статические. После этого компилятор создаст невиртуальные места для вызова этих членов. Это может привести к ощутимому росту производительности для чувствительного к производительности кода.",
+          "defaultLevel": "note",
+          "helpUri": "https://learn.microsoft.com/dotnet/fundamentals/code-analysis/quality-rules/ca1822",
+          "properties": {
+            "category": "Performance",
+            "isEnabledByDefault": true,
+            "tags": [
+              "PortedFromFxCop",
+              "Telemetry",
+              "EnabledRuleInAggressiveMode"
+            ]
+          }
+        },
+        "CS0105": {
+          "id": "CS0105",
+          "shortDescription": "Директива Using уже использовалась в этом пространстве имен",
+          "defaultLevel": "warning",
+          "helpUri": "https://msdn.microsoft.com/query/roslyn.query?appId=roslyn&k=k(CS0105)",
+          "properties": {
+            "category": "Compiler",
+            "isEnabledByDefault": true,
+            "tags": [
+              "Compiler",
+              "Telemetry"
+            ]
+          }
+        },
+        "S112": {
+          "id": "S112",
+          "shortDescription": "General or reserved exceptions should never be thrown",
+          "fullDescription": "This rule raises an issue when a general or reserved exception is thrown.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-112",
+          "properties": {
+            "category": "Major Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S125": {
+          "id": "S125",
+          "shortDescription": "Sections of code should not be commented out",
+          "fullDescription": "Commented-out code distracts the focus from the actual executed code. It creates a noise that increases maintenance code. And because it is never executed, it quickly becomes out of date and invalid.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-125",
+          "properties": {
+            "category": "Major Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "TestSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S3168": {
+          "id": "S3168",
+          "shortDescription": "\"async\" methods should not return \"void\"",
+          "fullDescription": "An async method with a void return type does not follow the task asynchronous programming (TAP) model since the return type should be Task or Task<TResult>",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-3168",
+          "properties": {
+            "category": "Major Bug",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "TestSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S4487": {
+          "id": "S4487",
+          "shortDescription": "Unread \"private\" fields should be removed",
+          "fullDescription": "Private fields which are written but never read are a case of \"dead store\". Changing the value of such a field is useless and most probably indicates an error in the code.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-4487",
+          "properties": {
+            "category": "Critical Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "TestSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S6934": {
+          "id": "S6934",
+          "shortDescription": "A Route attribute should be added to the controller when a route template is specified at the action level",
+          "fullDescription": "When a route template is defined through an attribute on an action method, conventional routing for that action is disabled. To maintain good practice, it’s recommended not to combine conventional and attribute-based routing within a single controller to avoid unpredicted behavior. As such, the controller should exclude itself from conventional routing by applying a [Route] attribute.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-6934",
+          "properties": {
+            "category": "Major Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S6966": {
+          "id": "S6966",
+          "shortDescription": "Awaitable method should be used",
+          "fullDescription": "In an async method, any blocking operations should be avoided.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-6966",
+          "properties": {
+            "category": "Major Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "TestSourceScope",
+              "SonarWay"
+            ]
+          }
+        }
+      }
+    }
+  ]
+}
